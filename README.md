@@ -15,7 +15,8 @@ At present, a directory and two files are needed:
   author = "Article author"
   published = true
   ```
-  author and published are optional, defaulting to empty string and true, respectively.
+  * author and published are optional, defaulting to empty string and true, respectively.
+  * content supports Markdown.
 * A template file, which should be a Handlebars HTML file.
 * An output file, which will be the location the output is written.
 
