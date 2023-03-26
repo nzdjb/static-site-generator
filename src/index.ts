@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { Article, ArticleConfig } from './article';
+import { Article, type ArticleConfig } from './article';
 import Handlebars from 'handlebars';
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
 import toml from '@iarna/toml';
@@ -7,7 +7,7 @@ import * as path from 'path';
 
 export function getArticles(articlesDir: string): Article[] {
   const config = readdirSync(articlesDir).map(file => path.join(articlesDir, file)).map(file => readFileSync(file).toString()).join('\n');
-  return (toml.parse(config)['articles'] as unknown as ArticleConfig[]).map(article => new Article(article));
+  return (toml.parse(config).articles as unknown as ArticleConfig[]).map(article => new Article(article));
 }
 
 export function renderIndex(template: string, articles: Article[]): string {

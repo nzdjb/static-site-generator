@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint src test"
   },
   "devDependencies": {
     "@types/jest": "^29.2.4",

@@ -36,7 +36,7 @@ export class Article {
     this.published = input.published ?? true;
   }
 
-  compareDate(other: Article) {
-    return this.date == other.date ? 0 : this.date > other.date ? 1 : -1;
+  compareDate(other: Article): number {
+    return this.date === other.date ? 0 : this.date > other.date ? 1 : -1;
   }
 }

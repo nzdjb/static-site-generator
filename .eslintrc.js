@@ -8,6 +8,12 @@ module.exports = {
     'prettier'
   ],
   overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      parserOptions: {
+        project: ['./tsconfig.json']
+      }
+    }
   ],
   parserOptions: {
     ecmaVersion: 'latest',
