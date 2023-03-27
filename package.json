@@ -1,6 +1,6 @@
 {
   "name": "@nzdjb/static-site-generator",
-  "version": "v0.0.1",
+  "version": "0.0.2",
   "description": "Static site generator.",
   "main": "dist/src/index.js",
   "repository": "https://github.com/nzdjb/static-site-generator",
@@ -38,5 +38,12 @@
     "handlebars": "^4.7.7",
     "marked": "^4.3.0",
     "sanitize-html": "^2.10.0"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
 }
