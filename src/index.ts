@@ -21,17 +21,21 @@ export function renderIndex(template: string, articles: Article[]): string {
 interface CLIArgs {
   articlesDir: string,
   indexTemplate: string,
-  outFile: string,
+  outFile?: string,
 }
 
 if (require.main === module) {
   const args = parse<CLIArgs>({
     articlesDir: String,
     indexTemplate: String,
-    outFile: String,
+    outFile: { type: String, optional: true },
   });
   const articles = getArticles(args.articlesDir);
   const template = readFileSync(args.indexTemplate).toString();
   const index = renderIndex(template, articles);
-  writeFileSync(args.outFile, index);
+  if (args.outFile !== undefined) {
+    writeFileSync(args.outFile, index);
+  } else {
+    console.log(index);
+  }
 }
