@@ -4,6 +4,7 @@ import Handlebars from 'handlebars';
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
 import toml from '@iarna/toml';
 import * as path from 'path';
+import { parse } from 'ts-command-line-args';
 
 export function getArticles(articlesDir: string): Article[] {
   const config = readdirSync(articlesDir).map(file => path.join(articlesDir, file)).map(file => readFileSync(file).toString()).join('\n');
@@ -17,10 +18,20 @@ export function renderIndex(template: string, articles: Article[]): string {
   return Handlebars.compile(template)({ articles });
 }
 
+interface CLIArgs {
+  articlesDir: string,
+  indexTemplate: string,
+  outFile: string,
+}
+
 if (require.main === module) {
-  const args = process.argv;
-  const articles = getArticles(args[2]);
-  const template = readFileSync(args[3]).toString();
+  const args = parse<CLIArgs>({
+    articlesDir: String,
+    indexTemplate: String,
+    outFile: String,
+  });
+  const articles = getArticles(args.articlesDir);
+  const template = readFileSync(args.indexTemplate).toString();
   const index = renderIndex(template, articles);
-  writeFileSync(args[4], index);
+  writeFileSync(args.outFile, index);
 }

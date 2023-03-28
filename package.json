@@ -37,7 +37,8 @@
     "@iarna/toml": "^2.2.5",
     "handlebars": "^4.7.7",
     "marked": "^4.3.0",
-    "sanitize-html": "^2.10.0"
+    "sanitize-html": "^2.10.0",
+    "ts-command-line-args": "^2.4.2"
   },
   "publishConfig": {
     "access": "public"

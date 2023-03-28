@@ -22,7 +22,7 @@ At present, a directory and two files are needed:
 
 Invocation is done as follows:
 ```bash
-static-site-generator <path-to-articles> <path-to-template-file> <path-to-output-file>
+static-site-generator --articlesDir <path-to-articles> --indexTemplate <path-to-template-file> --outFile <path-to-output-file>
 ```
 
 This command is highly subject to change!
