@@ -19,7 +19,7 @@ export function renderIndex(template: string, articles: Article[]): string {
 }
 
 interface CLIArgs {
-  articlesDir: string,
+  articlesDir?: string,
   indexTemplate: string,
   outFile?: string,
   help?: boolean,
@@ -27,14 +27,14 @@ interface CLIArgs {
 
 if (require.main === module) {
   const args = parse<CLIArgs>({
-    articlesDir: String,
+    articlesDir: { type: String, optional: true },
     indexTemplate: String,
     outFile: { type: String, optional: true },
     help: { type: Boolean, optional: true, alias: 'h', description: 'Prints this usage guide.' }
   }, {
     helpArg: 'help'
   });
-  const articles = getArticles(args.articlesDir);
+  const articles = getArticles(args.articlesDir ?? 'articles');
   const template = readFileSync(args.indexTemplate).toString();
   const index = renderIndex(template, articles);
   if (args.outFile !== undefined) {
