@@ -27,9 +27,9 @@ interface CLIArgs {
 
 if (require.main === module) {
   const args = parse<CLIArgs>({
-    articlesDir: { type: String, optional: true },
-    indexTemplate: { type: String, optional: true },
-    outFile: { type: String, optional: true },
+    articlesDir: { type: String, optional: true, description: 'Path to directory containing articles. Default: articles' },
+    indexTemplate: { type: String, optional: true, description: 'Path to index template file. Default: templates/index.hb.html' },
+    outFile: { type: String, optional: true, description: 'Path to file to write output. Default: STDOUT' },
     help: { type: Boolean, optional: true, alias: 'h', description: 'Prints this usage guide.' }
   }, {
     helpArg: 'help'
