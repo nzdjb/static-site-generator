@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.4.0](https://github.com/nzdjb/static-site-generator/compare/v0.3.0...v0.4.0) (2023-03-29)
+
+
+### Features
+
+* Make indexTemplate optional. ([cde30be](https://github.com/nzdjb/static-site-generator/commit/cde30bee11f8e040bfbe4c259ff4132ee82b903e))
+
+
+### Bug Fixes
+
+* Add descriptions for parameters. ([41cdc4d](https://github.com/nzdjb/static-site-generator/commit/41cdc4d9a7b483354cece486ecd50a58d9d7d444))
+
 ## [0.3.0](https://github.com/nzdjb/static-site-generator/compare/v0.2.0...v0.3.0) (2023-03-29)
 
 
