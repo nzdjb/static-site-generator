@@ -22,6 +22,7 @@ interface CLIArgs {
   articlesDir: string,
   indexTemplate: string,
   outFile?: string,
+  help?: boolean,
 }
 
 if (require.main === module) {
@@ -29,6 +30,9 @@ if (require.main === module) {
     articlesDir: String,
     indexTemplate: String,
     outFile: { type: String, optional: true },
+    help: { type: Boolean, optional: true, alias: 'h', description: 'Prints this usage guide.' }
+  }, {
+    helpArg: 'help'
   });
   const articles = getArticles(args.articlesDir);
   const template = readFileSync(args.indexTemplate).toString();
