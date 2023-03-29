@@ -16,7 +16,9 @@ jobs:
         with:
           release-type: node
           pull-request-title-pattern: "release${scope}: ${component} ${version}"
-          labels: ["autorelease: pending", "automerge"]
+          labels: |
+            autorelease: pending
+            automerge
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
