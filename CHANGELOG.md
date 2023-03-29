@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/nzdjb/static-site-generator/compare/v0.4.0...v0.4.1) (2023-03-29)
+
+
+### Bug Fixes
+
+* Upgrade deps to fix json5 vulnerability. ([db9fefb](https://github.com/nzdjb/static-site-generator/commit/db9fefbb1b95e0b47d385d78f9b86a6c64bb0745))
+
 ## [0.4.0](https://github.com/nzdjb/static-site-generator/compare/v0.3.0...v0.4.0) (2023-03-29)
 
 
