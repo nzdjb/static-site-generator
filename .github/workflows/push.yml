@@ -1,9 +1,7 @@
 name: Build
 on:
   push:
-  pull_request:
-    types: [opened, reopened, synchronize]
-    branches: [main]
+    branches-ignore: [main]
 jobs:
   build:
     runs-on: ubuntu-latest

@@ -11,6 +11,17 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18.x"
+          registry-url: "https://registry.npmjs.org"
+      - run: yarn install --frozen-lockfile --check-files
+      - run: yarn lint
+      - run: yarn build
+      - run: yarn test
       - uses: google-github-actions/release-please-action@v3
         id: release
         with:
@@ -19,19 +30,6 @@ jobs:
           labels: |
             autorelease: pending
             automerge
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-        if: ${{ steps.release.outputs.release_created }}
-      - uses: actions/setup-node@v3
-        with:
-          node-version: "18.x"
-          registry-url: "https://registry.npmjs.org"
-        if: ${{ steps.release.outputs.release_created }}
-      - run: yarn install --frozen-lockfile --check-files
-        if: ${{ steps.release.outputs.release_created }}
-      - run: yarn build
-        if: ${{ steps.release.outputs.release_created }}
       - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
