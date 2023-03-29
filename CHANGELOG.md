@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.0](https://github.com/nzdjb/static-site-generator/compare/v0.2.0...v0.3.0) (2023-03-29)
+
+
+### Features
+
+* Add help guide. ([0262674](https://github.com/nzdjb/static-site-generator/commit/0262674128c89dfca3572ad803bb544ea1bf0433))
+* Make articlesDir optional. ([a514837](https://github.com/nzdjb/static-site-generator/commit/a514837b69293eb51de0256b5f6734c02fb5d8be))
+
 ## [0.2.0](https://github.com/nzdjb/static-site-generator/compare/v0.1.0...v0.2.0) (2023-03-28)
 
 
