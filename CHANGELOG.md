@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.2](https://github.com/nzdjb/static-site-generator/compare/v0.4.1...v0.4.2) (2023-04-18)
+
+
+### Bug Fixes
+
+* Remove superfluous shebang. ([0ffd1ef](https://github.com/nzdjb/static-site-generator/commit/0ffd1ef0e78b91ba2d2eca3390f60f04ec0187b4))
+
 ## [0.4.1](https://github.com/nzdjb/static-site-generator/compare/v0.4.0...v0.4.1) (2023-03-29)
 
 
