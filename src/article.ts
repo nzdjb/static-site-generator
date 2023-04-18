@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import { marked } from 'marked';
 import sanitizeHTML from 'sanitize-html';
 
