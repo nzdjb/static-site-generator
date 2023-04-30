@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/nzdjb/static-site-generator/compare/v0.4.2...v0.5.0) (2023-04-30)
+
+
+### Features
+
+* Support single config file. ([4d4c1a9](https://github.com/nzdjb/static-site-generator/commit/4d4c1a9928d1e2ff4df34b5a3517047dc2a29f00))
+
 ## [0.4.2](https://github.com/nzdjb/static-site-generator/compare/v0.4.1...v0.4.2) (2023-04-18)
 
 
