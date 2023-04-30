@@ -6,7 +6,7 @@ A website generator. This is intended mostly for my own use, but you're welcome 
 
 At present, a directory and two files are needed:
 
-* The articles directory should contain toml files similar to the following:
+* The config directory should contain toml files similar to the following:
   ```toml
   [[articles]]
   title = "Article title"
@@ -22,7 +22,7 @@ At present, a directory and two files are needed:
 
 Invocation is done as follows:
 ```bash
-static-site-generator --articlesDir <path-to-articles> --indexTemplate <path-to-template-file> --outFile <path-to-output-file>
+static-site-generator --config <path-to-config> --indexTemplate <path-to-template-file> --outFile <path-to-output-file>
 ```
 
 This command is highly subject to change!
