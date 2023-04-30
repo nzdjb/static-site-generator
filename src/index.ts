@@ -13,7 +13,7 @@ export function renderIndex(template: string, articles: Article[]): string {
 }
 
 interface CLIArgs {
-  articlesDir?: string,
+  config?: string,
   indexTemplate?: string,
   outFile?: string,
   help?: boolean,
@@ -21,14 +21,14 @@ interface CLIArgs {
 
 if (require.main === module) {
   const args = parse<CLIArgs>({
-    articlesDir: { type: String, optional: true, description: 'Path to directory containing articles. Default: articles' },
+    config: { type: String, optional: true, description: 'Path to config file or directory of config files. Default: articles' },
     indexTemplate: { type: String, optional: true, description: 'Path to index template file. Default: templates/index.hb.html' },
     outFile: { type: String, optional: true, description: 'Path to file to write output. Default: STDOUT' },
     help: { type: Boolean, optional: true, alias: 'h', description: 'Prints this usage guide.' }
   }, {
     helpArg: 'help'
   });
-  const config = new Config(args.articlesDir ?? 'articles');
+  const config = new Config(args.config ?? 'articles');
   const template = readFileSync(args.indexTemplate ?? 'templates/index.hb.html').toString();
   const index = renderIndex(template, config.articles);
   if (args.outFile !== undefined) {

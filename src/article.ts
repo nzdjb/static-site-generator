@@ -2,7 +2,7 @@ import { marked } from 'marked';
 import sanitizeHTML from 'sanitize-html';
 
 const sanitizerSettings: sanitizeHTML.IOptions = {
-  allowedTags: sanitizeHTML.defaults.allowedTags.concat(['img']),
+  allowedTags: sanitizeHTML.defaults.allowedTags.concat(['img', 'h1']),
   disallowedTagsMode: 'escape',
 };
 
