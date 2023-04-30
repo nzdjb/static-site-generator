@@ -1,20 +1,5 @@
-import { getArticles, renderIndex } from '../src/index';
+import { renderIndex } from '../src/index';
 import { Article } from '../src/article';
-
-describe('getArticles', () => {
-  test('simple', () => {
-    const articles = getArticles('test/inputs');
-    expect(articles).toStrictEqual([
-      new Article({
-        author: 'Test',
-        content: '<p>Test</p>\n',
-        date: new Date('2023-01-01'),
-        published: true,
-        title: 'Test',
-      }),
-    ]);
-  });
-});
 
 describe('render index', () => {
   test('simple', () => {

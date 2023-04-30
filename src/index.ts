@@ -1,15 +1,9 @@
 #!/usr/bin/env node
-import { Article, type ArticleConfig } from './article';
 import Handlebars from 'handlebars';
-import { readFileSync, writeFileSync, readdirSync } from 'fs';
-import toml from '@iarna/toml';
-import * as path from 'path';
+import { readFileSync, writeFileSync } from 'fs';
 import { parse } from 'ts-command-line-args';
-
-export function getArticles(articlesDir: string): Article[] {
-  const config = readdirSync(articlesDir).map(file => path.join(articlesDir, file)).map(file => readFileSync(file).toString()).join('\n');
-  return (toml.parse(config).articles as unknown as ArticleConfig[]).map(article => new Article(article));
-}
+import { Config } from './config';
+import { type Article } from './article';
 
 export function renderIndex(template: string, articles: Article[]): string {
   articles = articles.filter((a) => a.published);
@@ -34,9 +28,9 @@ if (require.main === module) {
   }, {
     helpArg: 'help'
   });
-  const articles = getArticles(args.articlesDir ?? 'articles');
+  const config = new Config(args.articlesDir ?? 'articles');
   const template = readFileSync(args.indexTemplate ?? 'templates/index.hb.html').toString();
-  const index = renderIndex(template, articles);
+  const index = renderIndex(template, config.articles);
   if (args.outFile !== undefined) {
     writeFileSync(args.outFile, index);
   } else {
