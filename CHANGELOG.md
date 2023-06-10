@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.1](https://github.com/nzdjb/static-site-generator/compare/v0.5.0...v0.5.1) (2023-06-10)
+
+
+### Bug Fixes
+
+* Disable deprecated marked features. ([0b7e707](https://github.com/nzdjb/static-site-generator/commit/0b7e707cf8868f196fc2345c28939ada2ae27df8))
+* Move glob to dependencies. ([cdd51d1](https://github.com/nzdjb/static-site-generator/commit/cdd51d11d069a7c5f609f10d5fddd003badd3cb0))
+
 ## [0.5.0](https://github.com/nzdjb/static-site-generator/compare/v0.4.2...v0.5.0) (2023-04-30)
 
 
