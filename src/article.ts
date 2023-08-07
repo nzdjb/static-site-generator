@@ -31,13 +31,7 @@ export class Article {
     this.author = input.author;
     this.date = input.date.toISOString().split('T')[0];
     this.content = sanitizeHTML(
-      marked.parse(
-        input.content,
-        {
-          mangle: false,
-          headerIds: false,
-        }
-      ),
+      marked.parse(input.content),
       sanitizerSettings
     );
     this.published = input.published ?? true;
