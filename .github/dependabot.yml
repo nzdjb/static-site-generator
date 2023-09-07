@@ -6,7 +6,7 @@ updates:
       interval: "daily"
     commit-message:
       prefix: "fix(deps)"
-      prefix-development: "chore(deps)"
+      prefix-development: "chore(deps-dev)"
       include: "scope"
   - package-ecosystem: "github-actions"
     directory: "/"
