@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.2](https://github.com/nzdjb/static-site-generator/compare/v0.5.1...v0.5.2) (2023-09-18)
+
+
+### Bug Fixes
+
+* Bump marked from 9.0.0 to 9.0.2 ([#170](https://github.com/nzdjb/static-site-generator/issues/170)) ([cd2e82b](https://github.com/nzdjb/static-site-generator/commit/cd2e82b9b3b405ffcf6b2ff97f7dfc8c4f41af6b))
+
 ## [0.5.1](https://github.com/nzdjb/static-site-generator/compare/v0.5.0...v0.5.1) (2023-06-10)
 
 
