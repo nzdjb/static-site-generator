@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.4](https://github.com/nzdjb/static-site-generator/compare/v0.5.3...v0.5.4) (2023-09-21)
+
+
+### Bug Fixes
+
+* Bump glob from 10.3.4 to 10.3.5 ([#176](https://github.com/nzdjb/static-site-generator/issues/176)) ([2b2e068](https://github.com/nzdjb/static-site-generator/commit/2b2e068301b82ed7ba7eec3cab6df921dc06bb93))
+
 ## [0.5.3](https://github.com/nzdjb/static-site-generator/compare/v0.5.2...v0.5.3) (2023-09-19)
 
 
