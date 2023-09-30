@@ -31,9 +31,7 @@
     "prettier": "^3.0.0",
     "typescript": "*"
   },
-  "bin": {
-    "static-site-generator": "dist/src/index.js"
-  },
+  "bin": "dist/src/index.js",
   "dependencies": {
     "@iarna/toml": "^2.2.5",
     "glob": "^10.2.7",
@@ -42,13 +40,11 @@
     "sanitize-html": "^2.10.0",
     "ts-command-line-args": "^2.4.2"
   },
-  "resolutions": {
-    "eslint/**/strip-ansi": "^6"
-  },
   "publishConfig": {
     "access": "public"
   },
   "files": [
     "dist/src"
-  ]
+  ],
+  "packageManager": "yarn@3.6.3"
 }
