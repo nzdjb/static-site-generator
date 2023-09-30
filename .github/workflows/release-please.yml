@@ -30,7 +30,7 @@ jobs:
           labels: |
             autorelease: pending
             automerge
-      - run: yarn publish
+      - run: yarn npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
         if: ${{ steps.release.outputs.release_created }}
