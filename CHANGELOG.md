@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.5.6](https://github.com/nzdjb/static-site-generator/compare/v0.5.5...v0.5.6) (2023-09-30)
+
+
+### Bug Fixes
+
+* Bump glob from 10.3.7 to 10.3.9 ([#184](https://github.com/nzdjb/static-site-generator/issues/184)) ([3f0604d](https://github.com/nzdjb/static-site-generator/commit/3f0604d74fedf298613d9cee8914cd5e60d8128b))
+* Bump glob from 10.3.9 to 10.3.10 ([#186](https://github.com/nzdjb/static-site-generator/issues/186)) ([df25c13](https://github.com/nzdjb/static-site-generator/commit/df25c1334e2af1542240d5a88c16136d7fbafbea))
+* Correct dependency resolution issue. ([7589e6f](https://github.com/nzdjb/static-site-generator/commit/7589e6f2e3fb3824767b0c4a83bf667998b906d8))
+
 ## [0.5.5](https://github.com/nzdjb/static-site-generator/compare/v0.5.4...v0.5.5) (2023-09-25)
 
 
