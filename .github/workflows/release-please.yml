@@ -31,7 +31,8 @@ jobs:
           labels: |
             autorelease: pending
             automerge
-      - run: yarn npm publish
+      - run: yarn config set npmAuthToken ${NODE_AUTH_TOKEN}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+      - run: yarn npm publish
         if: ${{ steps.release.outputs.release_created }}
