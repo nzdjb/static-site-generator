@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.7](https://github.com/nzdjb/static-site-generator/compare/v0.5.6...v0.5.7) (2023-10-02)
+
+
+### Bug Fixes
+
+* Reinclude .ts files. ([88c5131](https://github.com/nzdjb/static-site-generator/commit/88c51314eeac302eb69faf0d0eb76d741edf1f70))
+
 ## [0.5.6](https://github.com/nzdjb/static-site-generator/compare/v0.5.5...v0.5.6) (2023-09-30)
 
 
