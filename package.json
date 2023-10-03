@@ -46,7 +46,7 @@
     "access": "public"
   },
   "files": [
-    "dist/src"
+    "dist/src/**/*"
   ],
   "packageManager": "yarn@3.6.3"
 }
