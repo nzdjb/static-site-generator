@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.8](https://github.com/nzdjb/static-site-generator/compare/v0.5.7...v0.5.8) (2023-10-03)
+
+
+### Bug Fixes
+
+* Correct files in package.json. ([feec663](https://github.com/nzdjb/static-site-generator/commit/feec6638e2e83f49e7071ce36c939629fd77db3c))
+
 ## [0.5.7](https://github.com/nzdjb/static-site-generator/compare/v0.5.6...v0.5.7) (2023-10-02)
 
 
