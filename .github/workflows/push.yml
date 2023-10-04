@@ -2,6 +2,11 @@ name: Build
 on:
   push:
     branches-ignore: [main]
+  pull_request:
+    types:
+      - opened
+    branches:
+      - 'release-please-*'
 jobs:
   build:
     runs-on: ubuntu-latest
