@@ -1,7 +1,10 @@
 name: Release Please
 on:
-  push:
+  workflow_run:
     branches: [main]
+    workflows: [Build]
+    types:
+      - completed
 
 permissions:
   contents: write
@@ -19,9 +22,6 @@ jobs:
           node-version: "18.x"
           registry-url: "https://registry.npmjs.org"
       - run: yarn install --immutable
-      - run: yarn lint
-      - run: yarn build
-      - run: yarn test
       - uses: google-github-actions/release-please-action@v3
         id: release
         with:
