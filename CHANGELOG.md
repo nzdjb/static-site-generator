@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.12](https://github.com/nzdjb/static-site-generator/compare/v0.5.11...v0.5.12) (2023-10-17)
+
+
+### Bug Fixes
+
+* Bump @babel/traverse from 7.23.0 to 7.23.2 ([#216](https://github.com/nzdjb/static-site-generator/issues/216)) ([cc1299d](https://github.com/nzdjb/static-site-generator/commit/cc1299d0182f5ad9e567d0cd12eb5afcafc4c275))
+
 ## [0.5.11](https://github.com/nzdjb/static-site-generator/compare/v0.5.10...v0.5.11) (2023-10-16)
 
 
