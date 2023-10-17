@@ -14,8 +14,8 @@ jobs:
         with:
           node-version: "18.x"
           registry-url: "https://registry.npmjs.org"
-     - run: yarn install --immutable
-     - run: yarn config set npmAuthToken ${NODE_AUTH_TOKEN}
+      - run: yarn install --immutable
+      - run: yarn config set npmAuthToken ${NODE_AUTH_TOKEN}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
       - run: yarn npm publish
