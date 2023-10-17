@@ -1,0 +1,22 @@
+name: Publish Release To NPM
+on:
+  release:
+    types: [published]
+
+jobs: 
+  publish-release-to-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18.x"
+          registry-url: "https://registry.npmjs.org"
+     - run: yarn install --immutable
+     - run: yarn config set npmAuthToken ${NODE_AUTH_TOKEN}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+      - run: yarn npm publish
+        if: ${{ steps.release.outputs.release_created }}
