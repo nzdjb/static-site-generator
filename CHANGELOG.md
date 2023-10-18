@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.13](https://github.com/nzdjb/static-site-generator/compare/v0.5.12...v0.5.13) (2023-10-18)
+
+
+### Bug Fixes
+
+* Correct publish to NPM job. ([97d7c49](https://github.com/nzdjb/static-site-generator/commit/97d7c49581bea71ef5819a3fd235d24bbfd39820))
+
 ## [0.5.12](https://github.com/nzdjb/static-site-generator/compare/v0.5.11...v0.5.12) (2023-10-17)
 
 
