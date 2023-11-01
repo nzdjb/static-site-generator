@@ -5447,11 +5447,11 @@ __metadata:
   linkType: hard
 
 "marked@npm:*, marked@npm:^9.0.0":
-  version: 9.1.3
-  resolution: "marked@npm:9.1.3"
+  version: 9.1.4
+  resolution: "marked@npm:9.1.4"
   bin:
     marked: bin/marked.js
-  checksum: d6f6e03006fd929e3d727848be7ee7df97454f620b00ef6372317a53795ab456f5cddb2bc4ba18b32b9c73ca4411f01b076ff1d283bd02b07f88af0af0443e6a
+  checksum: 660efebcf15bb86e6de5130b5c0bf484d9ad44752fb5a8064f425eb1cd590080727813e416329e6b33922fc36052c5e372109ee131b2556af82149e4b4a1d8f1
   languageName: node
   linkType: hard
 
