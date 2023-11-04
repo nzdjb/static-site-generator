@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.5.14](https://github.com/nzdjb/static-site-generator/compare/v0.5.13...v0.5.14) (2023-11-04)
+
+
+### Bug Fixes
+
+* Bump marked from 9.1.2 to 9.1.3 ([#229](https://github.com/nzdjb/static-site-generator/issues/229)) ([89a6f8d](https://github.com/nzdjb/static-site-generator/commit/89a6f8d473f7180962c602ef9de2a2466774b61e))
+* Bump marked from 9.1.3 to 9.1.4 ([#233](https://github.com/nzdjb/static-site-generator/issues/233)) ([4d43e5b](https://github.com/nzdjb/static-site-generator/commit/4d43e5bb863887e06255453f39708f5b18bc2f1e))
+* Bump marked from 9.1.4 to 9.1.5 ([#235](https://github.com/nzdjb/static-site-generator/issues/235)) ([4db1b6d](https://github.com/nzdjb/static-site-generator/commit/4db1b6d75aefbe2ec6f8cde712d67829cd5e653f))
+
 ## [0.5.13](https://github.com/nzdjb/static-site-generator/compare/v0.5.12...v0.5.13) (2023-10-18)
 
 
