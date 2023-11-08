@@ -1220,12 +1220,12 @@ __metadata:
   linkType: hard
 
 "@types/jest@npm:^29.2.4":
-  version: 29.5.7
-  resolution: "@types/jest@npm:29.5.7"
+  version: 29.5.8
+  resolution: "@types/jest@npm:29.5.8"
   dependencies:
     expect: ^29.0.0
     pretty-format: ^29.0.0
-  checksum: e28624ccb0ef1255a03fbbb4b5bc3e5cbcdc450d39e0739985ff679b124198f808c38c8c3e67859c6efc0e848196deeb8cfed028e12a821c511dfc1112a2d6e9
+  checksum: ca8438a5b4c098c8c023e9d5b279ea306494a1d0b5291cfb498100fa780377145f068b2a021d545b0398bbe0328dcc37044dd3aaf3c6c0fe9b0bef7b46a63453
   languageName: node
   linkType: hard
 
@@ -1269,11 +1269,11 @@ __metadata:
   linkType: hard
 
 "@types/sanitize-html@npm:^2.9.0":
-  version: 2.9.3
-  resolution: "@types/sanitize-html@npm:2.9.3"
+  version: 2.9.4
+  resolution: "@types/sanitize-html@npm:2.9.4"
   dependencies:
     htmlparser2: ^8.0.0
-  checksum: 882a39ec767e0c5fd4402108db4b8e4f85ff555cf490ad8c7340d9c58c57c3ffefa33c0d248d5e67047df6f744ca60e125da5485efc18ac450783f3900178373
+  checksum: 196c6b0a307b6e0482cbad4d28c5f3f7bf03001bdc30ad1a18b61a5074ddbf9c1f32adee539ecd83370fceea2ef501955a2c3f27f820c229974a265d31832c95
   languageName: node
   linkType: hard
 
