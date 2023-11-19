@@ -18,6 +18,8 @@ jobs:
         with:
           fetch-depth: 0
       - uses: google-github-actions/release-please-action@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.RELEASE_PLEASE_TOKEN }}
         id: release
         with:
           release-type: node
