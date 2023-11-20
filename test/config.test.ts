@@ -2,7 +2,7 @@ import { Article } from '../src/article';
 import { Config } from '../src/config';
 
 describe('loadConfig', () => {
-  test('simple', () => {
+  test('single dir', () => {
     const c = new Config('test/inputs');
     expect(c.articles).toIncludeSameMembers([
       new Article({
