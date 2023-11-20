@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/nzdjb/static-site-generator/compare/v0.5.15...v0.6.0) (2023-11-20)
+
+
+### Features
+
+* Multiple config locations ([#248](https://github.com/nzdjb/static-site-generator/issues/248)) ([7cd163b](https://github.com/nzdjb/static-site-generator/commit/7cd163b8aaf92d545254f92b78d766d216460b75))
+
 ## [0.5.15](https://github.com/nzdjb/static-site-generator/compare/v0.5.14...v0.5.15) (2023-11-19)
 
 
