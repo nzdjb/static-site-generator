@@ -28,7 +28,7 @@ if (require.main === module) {
   }, {
     helpArg: 'help'
   });
-  const config = new Config([args.config ?? 'articles']);
+  const config = new Config([args.config ?? 'articles'].flat());
   const template = readFileSync(args.indexTemplate ?? 'templates/index.hb.html').toString();
   const index = renderIndex(template, config.articles);
   if (args.outFile !== undefined) {
