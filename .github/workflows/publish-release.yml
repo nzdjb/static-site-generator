@@ -20,4 +20,3 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
       - run: yarn npm publish
-        if: ${{ steps.release.outputs.release_created }}
