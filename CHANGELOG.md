@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.1](https://github.com/nzdjb/static-site-generator/compare/v0.6.0...v0.6.1) (2023-11-30)
+
+
+### Bug Fixes
+
+* Bump marked from 10.0.0 to 11.0.0 ([#267](https://github.com/nzdjb/static-site-generator/issues/267)) ([545bfaf](https://github.com/nzdjb/static-site-generator/commit/545bfaf4bc7d05fcef7e3712b4d1e3e75725db5d))
+
 ## [0.6.0](https://github.com/nzdjb/static-site-generator/compare/v0.5.15...v0.6.0) (2023-11-20)
 
 
