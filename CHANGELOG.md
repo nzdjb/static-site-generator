@@ -1,5 +1,47 @@
 # Changelog
 
+## [0.7.0](https://github.com/nzdjb/static-site-generator/compare/static-site-generator-v0.6.1...static-site-generator-v0.7.0) (2023-12-06)
+
+
+### Features
+
+* Add functionality to output index to stdout. ([e19b562](https://github.com/nzdjb/static-site-generator/commit/e19b5622b18ca662681681ec62e04b53ec50dc55))
+* Add help guide. ([0262674](https://github.com/nzdjb/static-site-generator/commit/0262674128c89dfca3572ad803bb544ea1bf0433))
+* Improve CLI. ([ed4bde1](https://github.com/nzdjb/static-site-generator/commit/ed4bde15d8299f085a8b99a21174b23b90e47b77))
+* Initial commit. ([d110e71](https://github.com/nzdjb/static-site-generator/commit/d110e718a85c02e249ae2fbc62464d0cf5d212df))
+* Make articlesDir optional. ([a514837](https://github.com/nzdjb/static-site-generator/commit/a514837b69293eb51de0256b5f6734c02fb5d8be))
+* Make indexTemplate optional. ([cde30be](https://github.com/nzdjb/static-site-generator/commit/cde30bee11f8e040bfbe4c259ff4132ee82b903e))
+* Multiple config locations ([#248](https://github.com/nzdjb/static-site-generator/issues/248)) ([7cd163b](https://github.com/nzdjb/static-site-generator/commit/7cd163b8aaf92d545254f92b78d766d216460b75))
+* Support single config file. ([4d4c1a9](https://github.com/nzdjb/static-site-generator/commit/4d4c1a9928d1e2ff4df34b5a3517047dc2a29f00))
+
+
+### Bug Fixes
+
+* Add descriptions for parameters. ([41cdc4d](https://github.com/nzdjb/static-site-generator/commit/41cdc4d9a7b483354cece486ecd50a58d9d7d444))
+* Bump @babel/traverse from 7.23.0 to 7.23.2 ([#216](https://github.com/nzdjb/static-site-generator/issues/216)) ([cc1299d](https://github.com/nzdjb/static-site-generator/commit/cc1299d0182f5ad9e567d0cd12eb5afcafc4c275))
+* Bump glob from 10.3.4 to 10.3.5 ([#176](https://github.com/nzdjb/static-site-generator/issues/176)) ([2b2e068](https://github.com/nzdjb/static-site-generator/commit/2b2e068301b82ed7ba7eec3cab6df921dc06bb93))
+* Bump glob from 10.3.5 to 10.3.7 ([#179](https://github.com/nzdjb/static-site-generator/issues/179)) ([9923b74](https://github.com/nzdjb/static-site-generator/commit/9923b7491c5ddc3104cc39251703731a9f033dda))
+* Bump glob from 10.3.7 to 10.3.9 ([#184](https://github.com/nzdjb/static-site-generator/issues/184)) ([3f0604d](https://github.com/nzdjb/static-site-generator/commit/3f0604d74fedf298613d9cee8914cd5e60d8128b))
+* Bump glob from 10.3.9 to 10.3.10 ([#186](https://github.com/nzdjb/static-site-generator/issues/186)) ([df25c13](https://github.com/nzdjb/static-site-generator/commit/df25c1334e2af1542240d5a88c16136d7fbafbea))
+* Bump marked from 10.0.0 to 11.0.0 ([#267](https://github.com/nzdjb/static-site-generator/issues/267)) ([545bfaf](https://github.com/nzdjb/static-site-generator/commit/545bfaf4bc7d05fcef7e3712b4d1e3e75725db5d))
+* Bump marked from 9.0.0 to 9.0.2 ([#170](https://github.com/nzdjb/static-site-generator/issues/170)) ([cd2e82b](https://github.com/nzdjb/static-site-generator/commit/cd2e82b9b3b405ffcf6b2ff97f7dfc8c4f41af6b))
+* Bump marked from 9.0.2 to 9.0.3 ([#173](https://github.com/nzdjb/static-site-generator/issues/173)) ([84951d0](https://github.com/nzdjb/static-site-generator/commit/84951d0d8c63461b9d2209ddfc3a93ac0c0dbfa5))
+* Bump marked from 9.0.3 to 9.1.0 ([#198](https://github.com/nzdjb/static-site-generator/issues/198)) ([78ffd70](https://github.com/nzdjb/static-site-generator/commit/78ffd703881a999d01890ef8be3dae121747efbb))
+* Bump marked from 9.1.0 to 9.1.1 ([#208](https://github.com/nzdjb/static-site-generator/issues/208)) ([6d334e0](https://github.com/nzdjb/static-site-generator/commit/6d334e0fd780bfed447bd42a2b8f1629389f0d59))
+* Bump marked from 9.1.1 to 9.1.2 ([#213](https://github.com/nzdjb/static-site-generator/issues/213)) ([ef94e57](https://github.com/nzdjb/static-site-generator/commit/ef94e57d7330eceae1ae7fa95e79b46cb782df38))
+* Bump marked from 9.1.2 to 9.1.3 ([#229](https://github.com/nzdjb/static-site-generator/issues/229)) ([89a6f8d](https://github.com/nzdjb/static-site-generator/commit/89a6f8d473f7180962c602ef9de2a2466774b61e))
+* Bump marked from 9.1.3 to 9.1.4 ([#233](https://github.com/nzdjb/static-site-generator/issues/233)) ([4d43e5b](https://github.com/nzdjb/static-site-generator/commit/4d43e5bb863887e06255453f39708f5b18bc2f1e))
+* Bump marked from 9.1.4 to 9.1.5 ([#235](https://github.com/nzdjb/static-site-generator/issues/235)) ([4db1b6d](https://github.com/nzdjb/static-site-generator/commit/4db1b6d75aefbe2ec6f8cde712d67829cd5e653f))
+* Bump marked from 9.1.5 to 10.0.0 ([#242](https://github.com/nzdjb/static-site-generator/issues/242)) ([c2f8d7f](https://github.com/nzdjb/static-site-generator/commit/c2f8d7f5124b09b28441dde742becc4b8df8a1c6))
+* Correct dependency resolution issue. ([7589e6f](https://github.com/nzdjb/static-site-generator/commit/7589e6f2e3fb3824767b0c4a83bf667998b906d8))
+* Correct files in package.json. ([feec663](https://github.com/nzdjb/static-site-generator/commit/feec6638e2e83f49e7071ce36c939629fd77db3c))
+* Correct publish to NPM job. ([97d7c49](https://github.com/nzdjb/static-site-generator/commit/97d7c49581bea71ef5819a3fd235d24bbfd39820))
+* Disable deprecated marked features. ([0b7e707](https://github.com/nzdjb/static-site-generator/commit/0b7e707cf8868f196fc2345c28939ada2ae27df8))
+* Move glob to dependencies. ([cdd51d1](https://github.com/nzdjb/static-site-generator/commit/cdd51d11d069a7c5f609f10d5fddd003badd3cb0))
+* Reinclude .ts files. ([88c5131](https://github.com/nzdjb/static-site-generator/commit/88c51314eeac302eb69faf0d0eb76d741edf1f70))
+* Remove superfluous shebang. ([0ffd1ef](https://github.com/nzdjb/static-site-generator/commit/0ffd1ef0e78b91ba2d2eca3390f60f04ec0187b4))
+* Upgrade deps to fix json5 vulnerability. ([db9fefb](https://github.com/nzdjb/static-site-generator/commit/db9fefbb1b95e0b47d385d78f9b86a6c64bb0745))
+
 ## [0.6.1](https://github.com/nzdjb/static-site-generator/compare/v0.6.0...v0.6.1) (2023-11-30)
 
 
