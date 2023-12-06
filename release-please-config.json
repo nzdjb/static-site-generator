@@ -8,8 +8,7 @@
       "extra-label": "automerge",
       "label": "autorelease: pending",
       "prerelease": false,
-      "pull-request-title-pattern": "release${scope}: ${component} ${version}",
-      "release-type": "node"
+      "pull-request-title-pattern": "release${scope}: ${component} ${version}"
     }
   },
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
