@@ -5,7 +5,8 @@
       "bump-patch-for-minor-pre-major": false,
       "changelog-path": "CHANGELOG.md",
       "draft": false,
-      "label": ["autorelease: pending", "automerge"],
+      "extra-label": "automerge",
+      "label": "autorelease: pending",
       "prerelease": false,
       "pull-request-title-pattern": "release${scope}: ${component} ${version}",
       "release-type": "node"
