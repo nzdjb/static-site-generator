@@ -6541,8 +6541,8 @@ __metadata:
   linkType: hard
 
 "sanitize-html@npm:^2.10.0":
-  version: 2.12.0
-  resolution: "sanitize-html@npm:2.12.0"
+  version: 2.12.1
+  resolution: "sanitize-html@npm:2.12.1"
   dependencies:
     deepmerge: ^4.2.2
     escape-string-regexp: ^4.0.0
@@ -6550,7 +6550,7 @@ __metadata:
     is-plain-object: ^5.0.0
     parse-srcset: ^1.0.2
     postcss: ^8.3.11
-  checksum: 559cc40acdfef7fb3dd15c1d6023b15a9f30093a5d1191baf1d17e6d4b211c42394a9e6ef95fb1988cc960e5ccb7b6d5cbe042fa9ccc6440944667745dba6f27
+  checksum: fb96ea7170d51b5af2607f5cfd84464c78fc6f47e339407f55783e781c6a0288a8d40bbf97ea6a8758924ba9b2d33dcc4846bb94caacacd90d7f2de10ed8541a
   languageName: node
   linkType: hard
 
