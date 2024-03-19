@@ -2,7 +2,7 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
 {
 	"name": "static-website-gennerator",
-	"image": "mcr.microsoft.com/devcontainers/typescript-node:18-bullseye",
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:20-bullseye",
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
@@ -13,8 +13,10 @@
 	// "customizations": {},
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
-	"mounts": [
-		"source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
-	],
-	"postCreateCommand": "sudo chown node node_modules && yarn install"
+	// "mounts": [
+	// 	"source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
+	// ],
+	"postCreateCommand": "sudo chown node node_modules && yarn install",
+	"workspaceMount": "type=bind,source=${localWorkspaceFolder},target=/workspaces/static-website-generator",
+	"workspaceFolder": "/workspaces/static-website-generator"
 }
