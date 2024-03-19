@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.6.5](https://github.com/nzdjb/static-site-generator/compare/v0.6.4...v0.6.5) (2024-03-19)
+
+
+### Bug Fixes
+
+* bump ip from 2.0.0 to 2.0.1 ([#342](https://github.com/nzdjb/static-site-generator/issues/342)) ([0143d0a](https://github.com/nzdjb/static-site-generator/commit/0143d0a42a8cc93756470fb25a4ba05271832116))
+* bump marked from 12.0.0 to 12.0.1 ([#353](https://github.com/nzdjb/static-site-generator/issues/353)) ([8fd8263](https://github.com/nzdjb/static-site-generator/commit/8fd8263cd44e2b8ee6d6c21842357ec95a1360f9))
+* bump sanitize-html from 2.11.0 to 2.12.0 ([#344](https://github.com/nzdjb/static-site-generator/issues/344)) ([f890c13](https://github.com/nzdjb/static-site-generator/commit/f890c13600182d582fa38adac05121c95b6d1019))
+* bump sanitize-html from 2.12.0 to 2.12.1 ([#345](https://github.com/nzdjb/static-site-generator/issues/345)) ([c5cfcd5](https://github.com/nzdjb/static-site-generator/commit/c5cfcd522d18665675b4c9ec414735056a4eed17))
+
 ## [0.6.4](https://github.com/nzdjb/static-site-generator/compare/v0.6.3...v0.6.4) (2024-02-17)
 
 
