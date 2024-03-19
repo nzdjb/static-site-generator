@@ -1,11 +1,13 @@
-import { Article } from '../src/article';
+import { Article } from '../src/article.js';
+import { describe, test } from 'node:test';
+import { ok, equal, deepEqual } from 'node:assert';
 
-describe('article', () => {
-  test('creates', () => {
-    const title = 'Test article';
+await describe('article', async () => {
+  await test('creates', () => {
+    const title = 'test article';
     const author = 'Bob';
     const date = new Date('January 1, 2023 12:34:56');
-    const content = '# Test';
+    const content = '# test';
     const published = true;
     const article = new Article({
       title,
@@ -14,16 +16,16 @@ describe('article', () => {
       content,
       published,
     });
-    expect(article).toBeInstanceOf(Article);
-    expect(article.title).toBe(title);
-    expect(article.author).toBe(author);
-    expect(article.date).toBe('2023-01-01');
-    expect(article.content).toBe('<h1>Test</h1>\n');
-    expect(article.published).toBe(true);
+    ok(article instanceof Article);
+    equal(article.title, title);
+    equal(article.author, author);
+    equal(article.date, '2023-01-01');
+    equal(article.content, '<h1>test</h1>\n');
+    equal(article.published, true);
   });
 
-  test('creates with defaults', () => {
-    const title = 'Test article';
+  await test('creates with defaults', () => {
+    const title = 'test article';
     const date = new Date('January 1, 2023');
     const content = '';
     const article = new Article({
@@ -31,15 +33,15 @@ describe('article', () => {
       date,
       content,
     });
-    expect(article).toBeInstanceOf(Article);
-    expect(article.title).toBe(title);
-    expect(article.author).toBeUndefined();
-    expect(article.date).toBe('2023-01-01');
-    expect(article.content).toBe('');
-    expect(article.published).toBe(true);
+    ok(article instanceof Article);
+    equal(article.title, title);
+    equal(article.author, undefined);
+    equal(article.date, '2023-01-01');
+    equal(article.content, '');
+    equal(article.published, true);
   });
 
-  test('compare dates', () => {
+  await test('compare dates', () => {
     const a = new Article({
       title: '',
       content: '',
@@ -60,15 +62,15 @@ describe('article', () => {
       content: '',
       date: new Date('January 3, 2023 12:34:56'),
     });
-    expect(a.compareDate(a)).toBe(0);
-    expect(a.compareDate(b)).toBe(0);
-    expect(a.compareDate(c)).toBe(-1);
-    expect(d.compareDate(c)).toBe(1);
-    expect(
+    equal(a.compareDate(a), 0);
+    equal(a.compareDate(b), 0);
+    equal(a.compareDate(c), -1);
+    equal(d.compareDate(c), 1);
+    deepEqual(
       [a, c, d].sort((a: Article, b: Article) => a.compareDate(b)),
-    ).toStrictEqual([a, c, d]);
-    expect(
+      [a, c, d]);
+    deepEqual(
       [d, a, c].sort((a: Article, b: Article) => a.compareDate(b)),
-    ).toStrictEqual([a, c, d]);
+      [a, c, d]);
   });
 });

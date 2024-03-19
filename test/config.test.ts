@@ -1,10 +1,12 @@
-import { Article } from '../src/article';
-import { Config } from '../src/config';
+import { Article } from '../src/article.js';
+import { Config } from '../src/config.js';
+import { describe, test } from 'node:test';
+import { deepEqual } from 'node:assert';
 
-describe('loadConfig', () => {
-  test('single dir', () => {
+await describe('loadConfig', async () => {
+  await test('single dir', () => {
     const c = new Config(['test/inputs']);
-    expect(c.articles).toIncludeSameMembers([
+    deepEqual(new Set(c.articles), new Set([
       new Article({
         author: 'Test',
         content: '<p>Test</p>\n',
@@ -19,12 +21,12 @@ describe('loadConfig', () => {
         published: true,
         title: 'Test 2',
       }),
-    ]);
+    ]));
   });
 
-  test('single file', () => {
+  await test('single file', () => {
     const c = new Config(['test/inputs/test.toml']);
-    expect(c.articles).toEqual([
+    deepEqual(c.articles, [
       new Article({
         author: 'Test',
         content: '<p>Test</p>\n',
@@ -35,9 +37,9 @@ describe('loadConfig', () => {
     ]);
   });
 
-  test('multiple files', () => {
+  await test('multiple files', () => {
     const c = new Config(['test/inputs/test.toml', 'test/inputs/test2.toml']);
-    expect(c.articles).toIncludeSameMembers([
+    deepEqual(c.articles, [
       new Article({
         author: 'Test',
         content: '<p>Test</p>\n',
@@ -55,9 +57,9 @@ describe('loadConfig', () => {
     ]);
   });
 
-  test('overlapping file and dir', () => {
+  await test('overlapping file and dir', () => {
     const c = new Config(['test/inputs/test.toml', 'test/inputs/']);
-    expect(c.articles).toIncludeSameMembers([
+    deepEqual(c.articles, [
       new Article({
         author: 'Test',
         content: '<p>Test</p>\n',

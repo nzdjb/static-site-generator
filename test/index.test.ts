@@ -1,15 +1,17 @@
-import { renderIndex } from '../src/index';
-import { Article } from '../src/article';
+import { renderIndex } from '../src/index.js';
+import { Article } from '../src/article.js';
+import { describe, test } from 'node:test';
+import { equal } from 'node:assert';
 
-describe('render index', () => {
-  test('simple', () => {
+await describe('render index', async () => {
+  await test('simple', () => {
     const articles: Article[] = [];
     const template = '<html></html>';
     const result = renderIndex(template, articles);
-    expect(result).toBe('<html></html>');
+    equal(result, '<html></html>');
   });
 
-  test('with articles', () => {
+  await test('with articles', () => {
     const template =
       '<html><body>{{#each articles}}{{this.title}}<br />{{/each}}</body></html>';
     const articles = [
@@ -25,12 +27,12 @@ describe('render index', () => {
       }),
     ];
     const result = renderIndex(template, articles);
-    expect(result).toBe(
+    equal(result,
       '<html><body>On Walruses<br />On Turtles<br /></body></html>',
     );
   });
 
-  test('skip unpublished', () => {
+  await test('skip unpublished', () => {
     const template =
       '<html><body>{{#each articles}}{{this.title}}<br />{{/each}}</body></html>';
     const articles = [
@@ -47,6 +49,6 @@ describe('render index', () => {
       }),
     ];
     const result = renderIndex(template, articles);
-    expect(result).toBe('<html><body>On Walruses<br /></body></html>');
+    equal(result, '<html><body>On Walruses<br /></body></html>');
   });
 });
