@@ -19,7 +19,6 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: ["jest-extended"],
   rules: {
   }
 }
