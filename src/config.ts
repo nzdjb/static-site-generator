@@ -1,4 +1,4 @@
-import { Article, type ArticleConfig } from './article';
+import { Article, type ArticleConfig } from './article.js';
 import { readFileSync, lstatSync } from 'fs';
 import toml from '@iarna/toml';
 import * as path from 'path';

@@ -2,8 +2,9 @@
 import Handlebars from 'handlebars';
 import { readFileSync, writeFileSync } from 'fs';
 import { parse } from 'ts-command-line-args';
-import { Config } from './config';
-import { type Article } from './article';
+import { Config } from './config.js';
+import { type Article } from './article.js';
+import esMain from 'es-main';
 
 export function renderIndex(template: string, articles: Article[]): string {
   articles = articles.filter((a) => a.published);
@@ -19,7 +20,7 @@ interface CLIArgs {
   help?: boolean,
 }
 
-if (require.main === module) {
+if (esMain(import.meta)) {
   const args = parse<CLIArgs>({
     config: { type: String, optional: true, multiple: true, description: 'Path to config file or directory of config files. Default: articles' },
     indexTemplate: { type: String, optional: true, description: 'Path to index template file. Default: templates/index.hb.html' },
