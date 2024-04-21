@@ -24,6 +24,27 @@ await describe('article', async () => {
     equal(article.published, true);
   });
 
+  await test('creates with contentFile', () => {
+    const title = 'test article';
+    const author = 'Bob';
+    const date = new Date('January 1, 2023 12:34:56');
+    const contentFile = 'test/inputs/test.md';
+    const published = true;
+    const article = new Article({
+      title,
+      author,
+      date,
+      contentFile,
+      published,
+    });
+    ok(article instanceof Article);
+    equal(article.title, title);
+    equal(article.author, author);
+    equal(article.date, '2023-01-01');
+    equal(article.content, '<h1>test</h1>\n');
+    equal(article.published, true);
+  });
+
   await test('creates with defaults', () => {
     const title = 'test article';
     const date = new Date('January 1, 2023');
