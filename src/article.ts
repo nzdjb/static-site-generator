@@ -1,4 +1,5 @@
 import { marked } from 'marked';
+import { readFileSync } from 'node:fs';
 import sanitizeHTML from 'sanitize-html';
 
 const sanitizerSettings: sanitizeHTML.IOptions = {
@@ -11,13 +12,22 @@ export interface Link {
   title: string;
 }
 
-export interface ArticleConfig {
+interface ArticleBaseConfig {
   title: string;
   author?: string;
   date: Date;
-  content: string;
   published?: boolean;
 }
+
+interface ArticleStringConfig extends ArticleBaseConfig {
+  content: string;
+}
+
+interface ArticleFileConfig extends ArticleBaseConfig {
+  contentFile: string;
+}
+
+export type ArticleConfig = ArticleStringConfig | ArticleFileConfig;
 
 export class Article {
   readonly title: string;
@@ -30,8 +40,9 @@ export class Article {
     this.title = input.title;
     this.author = input.author;
     this.date = input.date.toISOString().split('T')[0];
+    const content = "content" in input ? input.content : readFileSync(input.contentFile).toString();
     this.content = sanitizeHTML(
-      marked.parse(input.content, { async: false }) as string,
+      marked.parse(content, { async: false }) as string,
       sanitizerSettings
     );
     this.published = input.published ?? true;
