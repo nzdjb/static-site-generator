@@ -1,0 +1,15 @@
+name: Label Release Branch
+
+on:
+  pull_request:
+    types: opened
+
+jobs:
+  add_automerge_label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Label
+        uses: actions-ecosystem/action-add-labels@v1
+        if: github.event.pull_request.author_association == OWNER
+        with:
+          labels: automerge
