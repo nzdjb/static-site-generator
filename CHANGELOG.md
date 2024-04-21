@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.7.0](https://github.com/nzdjb/static-site-generator/compare/v0.6.5...v0.7.0) (2024-04-21)
+
+
+### Features
+
+* Add support for reading articles from files. ([#384](https://github.com/nzdjb/static-site-generator/issues/384)) ([16a4d58](https://github.com/nzdjb/static-site-generator/commit/16a4d585a1349519b7c36e5864406fe94bac4713))
+
+
+### Bug Fixes
+
+* bump glob from 10.3.10 to 10.3.12 ([#368](https://github.com/nzdjb/static-site-generator/issues/368)) ([cd2e498](https://github.com/nzdjb/static-site-generator/commit/cd2e498aed036806d606962625ce50b71001f0af))
+* bump sanitize-html from 2.12.1 to 2.13.0 ([#365](https://github.com/nzdjb/static-site-generator/issues/365)) ([c4c11d0](https://github.com/nzdjb/static-site-generator/commit/c4c11d0fd39e160c6663ebe2b4472183f5ac42c3))
+
 ## [0.6.5](https://github.com/nzdjb/static-site-generator/compare/v0.6.4...v0.6.5) (2024-03-19)
 
 
