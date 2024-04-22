@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.1](https://github.com/nzdjb/static-site-generator/compare/v0.7.0...v0.7.1) (2024-04-22)
+
+
+### Bug Fixes
+
+* bump marked from 12.0.1 to 12.0.2 ([#386](https://github.com/nzdjb/static-site-generator/issues/386)) ([1e944e6](https://github.com/nzdjb/static-site-generator/commit/1e944e6c6aa504f8338e8451fa6d027047f1a6f0))
+
 ## [0.7.0](https://github.com/nzdjb/static-site-generator/compare/v0.6.5...v0.7.0) (2024-04-21)
 
 
