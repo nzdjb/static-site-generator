@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Label
         uses: actions/github-script@v7
-        if: github.event.pull_request.author_association == OWNER && ${{ startsWith(github.event.pull_request.title, format('chore(main){0} release', ':')) }}
+        if: ${{ github.event.pull_request.author_association == 'OWNER' && startsWith(github.event.pull_request.title, format('chore(main){0} release', ':')) }}
         with:
           script: |
             github.rest.issues.addLabels({
