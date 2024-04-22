@@ -28,8 +28,9 @@ jobs:
           ISSUE_NUMBER: ${{ steps.release.outputs.pr.number }}
         with:
           script: |
+            const ISSUE_NUMBER = process.env.ISSUE_NUMBER
             github.rest.issues.addLabels({
-              issue_number: ${ISSUE_NUMBER},
+              issue_number: ISSUE_NUMBER,
               owner: context.repo.owner,
               repo: context.repo.repo,
               labels: ['automerge']
