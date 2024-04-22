@@ -17,7 +17,7 @@ At present, a directory and two files are needed:
   ```
   * content can alternatively be read from a file with contentFile. This is mutually exclusive with content.
   * author and published are optional, defaulting to empty string and true, respectively.
-  * content supports Markdown.
+  * content and contentFile support Markdown.
 * A template file, which should be a Handlebars HTML file.
 * An output file, which will be the location the output is written.
 
