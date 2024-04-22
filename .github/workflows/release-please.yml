@@ -23,7 +23,7 @@ jobs:
           token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
           release-type: node
       - uses: actions/github-script@v7
-        if: steps.release.outputs.prs_created
+        if: ${{ steps.release.outputs.prs_created == 'true' }}
         env:
           ISSUE_NUMBER: ${{ steps.release.outputs.pr.number }}
         with:
