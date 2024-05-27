@@ -1809,8 +1809,8 @@ __metadata:
   linkType: hard
 
 "glob@npm:^10.2.7":
-  version: 10.4.0
-  resolution: "glob@npm:10.4.0"
+  version: 10.4.1
+  resolution: "glob@npm:10.4.1"
   dependencies:
     foreground-child: ^3.1.0
     jackspeak: ^3.1.2
@@ -1819,7 +1819,7 @@ __metadata:
     path-scurry: ^1.11.1
   bin:
     glob: dist/esm/bin.mjs
-  checksum: 842e619865ea530634b9061c4f6f9307bc6dbbcc7edcad31a5b260b33babbfdd0a9081c1a3ae2c8e995d691b0bbecd0e763e6602688b20b056184332463a1ca4
+  checksum: 5d33c686c80bf6877f4284adf99a8c3cbb2a6eccbc92342943fe5d4b42c01d78c1881f2223d950c92a938d0f857e12e37b86a8e5483ab2141822e053b67d0dde
   languageName: node
   linkType: hard
 
