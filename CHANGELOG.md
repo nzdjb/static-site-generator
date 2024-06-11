@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.7.2](https://github.com/nzdjb/static-site-generator/compare/v0.7.1...v0.7.2) (2024-06-11)
+
+
+### Bug Fixes
+
+* bump braces from 3.0.2 to 3.0.3 ([#429](https://github.com/nzdjb/static-site-generator/issues/429)) ([9793bd9](https://github.com/nzdjb/static-site-generator/commit/9793bd9b2a593793faebebe58ee939ae1669df1a))
+* bump glob from 10.3.12 to 10.3.14 ([#400](https://github.com/nzdjb/static-site-generator/issues/400)) ([8ca3aac](https://github.com/nzdjb/static-site-generator/commit/8ca3aac0bf527842f9286858f15a46de5c35d0c2))
+* bump glob from 10.3.14 to 10.3.15 ([#403](https://github.com/nzdjb/static-site-generator/issues/403)) ([54ce9cd](https://github.com/nzdjb/static-site-generator/commit/54ce9cd84b7c820c06d9b7d52da8e64c71f3ca01))
+* bump glob from 10.3.16 to 10.4.0 ([#411](https://github.com/nzdjb/static-site-generator/issues/411)) ([03feef6](https://github.com/nzdjb/static-site-generator/commit/03feef6298777b2747e6bf5ac945421c68b2fd5c))
+* bump glob from 10.4.0 to 10.4.1 ([#412](https://github.com/nzdjb/static-site-generator/issues/412)) ([24746d5](https://github.com/nzdjb/static-site-generator/commit/24746d51a926fb45d2c5012f4fec0bb4ec978f2d))
+
 ## [0.7.1](https://github.com/nzdjb/static-site-generator/compare/v0.7.0...v0.7.1) (2024-04-22)
 
 
