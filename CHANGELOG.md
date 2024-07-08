@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.7](https://github.com/nzdjb/static-site-generator/compare/v0.7.6...v0.7.7) (2024-07-08)
+
+
+### Bug Fixes
+
+* bump glob from 10.4.2 to 10.4.3 ([#461](https://github.com/nzdjb/static-site-generator/issues/461)) ([d47b205](https://github.com/nzdjb/static-site-generator/commit/d47b20514a91cbda1ea5e3788a24d52d07951779))
+
 ## [0.7.6](https://github.com/nzdjb/static-site-generator/compare/v0.7.5...v0.7.6) (2024-07-04)
 
 
