@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.10](https://github.com/nzdjb/static-site-generator/compare/v0.7.9...v0.7.10) (2024-08-23)
+
+
+### Bug Fixes
+
+* bump marked from 13.0.3 to 14.0.0 ([#497](https://github.com/nzdjb/static-site-generator/issues/497)) ([9cec66b](https://github.com/nzdjb/static-site-generator/commit/9cec66b79feee40d1cdecd8026d654e91fde8dda))
+
 ## [0.7.9](https://github.com/nzdjb/static-site-generator/compare/v0.7.8...v0.7.9) (2024-07-29)
 
 
