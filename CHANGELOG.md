@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.12](https://github.com/nzdjb/static-site-generator/compare/v0.7.11...v0.7.12) (2024-08-26)
+
+
+### Bug Fixes
+
+* bump micromatch from 4.0.5 to 4.0.8 ([#517](https://github.com/nzdjb/static-site-generator/issues/517)) ([2317442](https://github.com/nzdjb/static-site-generator/commit/23174422e3a470acde43aa2f7e3024a9f22e599f))
+
 ## [0.7.11](https://github.com/nzdjb/static-site-generator/compare/v0.7.10...v0.7.11) (2024-08-26)
 
 
