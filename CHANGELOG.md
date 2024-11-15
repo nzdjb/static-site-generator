@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.6](https://github.com/nzdjb/static-site-generator/compare/v0.8.5...v0.8.6) (2024-11-15)
+
+
+### Bug Fixes
+
+* bump @eslint/plugin-kit from 0.2.0 to 0.2.3 ([#601](https://github.com/nzdjb/static-site-generator/issues/601)) ([28229ad](https://github.com/nzdjb/static-site-generator/commit/28229ad734a25d18aebdf35e6b7d3c6fbf9cf512))
+
 ## [0.8.5](https://github.com/nzdjb/static-site-generator/compare/v0.8.4...v0.8.5) (2024-11-08)
 
 
