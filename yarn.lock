@@ -384,7 +384,7 @@ __metadata:
     eslint-plugin-promise: ^7.1.0
     glob: ^11.0.0
     handlebars: ^4.7.7
-    marked: ^14.0.0
+    marked: ^15.0.0
     prettier: ^3.0.0
     sanitize-html: ^2.10.0
     ts-command-line-args: ^2.4.2
@@ -1690,12 +1690,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:*, marked@npm:^14.0.0":
+"marked@npm:*":
   version: 14.1.4
   resolution: "marked@npm:14.1.4"
   bin:
     marked: bin/marked.js
   checksum: 6f2f7dd0ba2b8ccfe612185d83521a1264d0707ed6abe2d4a36e437f775844e76db147840a21fb5bd33518b9470c58e0f281e3a2ea1659f0b1e6cdcd4b3a6d3a
+  languageName: node
+  linkType: hard
+
+"marked@npm:^15.0.0":
+  version: 15.0.0
+  resolution: "marked@npm:15.0.0"
+  bin:
+    marked: bin/marked.js
+  checksum: b647884bf50f3120915088487818a0f454a976b7c2105ea6ce851b53a38775894aba8cb86473c16641d17029f3eac0cec8d3ee8df0391a3268cabb26ee371497
   languageName: node
   linkType: hard
 
