@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.7](https://github.com/nzdjb/static-site-generator/compare/v0.8.6...v0.8.7) (2024-11-18)
+
+
+### Bug Fixes
+
+* bump cross-spawn from 7.0.3 to 7.0.5 ([#605](https://github.com/nzdjb/static-site-generator/issues/605)) ([dd58a3f](https://github.com/nzdjb/static-site-generator/commit/dd58a3f4efb1da5946ea791b000902acffb168f7))
+
 ## [0.8.6](https://github.com/nzdjb/static-site-generator/compare/v0.8.5...v0.8.6) (2024-11-15)
 
 
