@@ -1142,13 +1142,13 @@ __metadata:
   linkType: hard
 
 "eslint-plugin-promise@npm:^7.1.0":
-  version: 7.2.0
-  resolution: "eslint-plugin-promise@npm:7.2.0"
+  version: 7.2.1
+  resolution: "eslint-plugin-promise@npm:7.2.1"
   dependencies:
     "@eslint-community/eslint-utils": ^4.4.0
   peerDependencies:
     eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
-  checksum: 186cd1adbcb4617acdf5fdb0c4692ae768c5c0add601573062eac7b1e8e5ae335b46c7035d876f3d03947990c1e659bfe490a7a4ec601b117a9d736b91c5776e
+  checksum: 9101a93efd79f5202d0239d7666935c1d5655f64f4527cea6e82e1438b4de4304351de60f2c26201289a22eed1da4b3a21e7996fa3268b9943b98d12c80b2030
   languageName: node
   linkType: hard
 
