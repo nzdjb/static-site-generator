@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.1](https://github.com/nzdjb/static-site-generator/compare/v0.9.0...v0.9.1) (2024-12-10)
+
+
+### Bug Fixes
+
+* bump nanoid from 3.3.6 to 3.3.8 ([#632](https://github.com/nzdjb/static-site-generator/issues/632)) ([e46a8f6](https://github.com/nzdjb/static-site-generator/commit/e46a8f665fd8564f4057807ef1ac0fee9bacdbc1))
+
 ## [0.9.0](https://github.com/nzdjb/static-site-generator/compare/v0.8.9...v0.9.0) (2024-12-02)
 
 
