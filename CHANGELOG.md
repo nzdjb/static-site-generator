@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.7](https://github.com/nzdjb/static-site-generator/compare/v0.9.6...v0.9.7) (2025-02-10)
+
+
+### Bug Fixes
+
+* bump marked from 15.0.6 to 15.0.7 ([#683](https://github.com/nzdjb/static-site-generator/issues/683)) ([53b671a](https://github.com/nzdjb/static-site-generator/commit/53b671a2d4bb5c6f84b4c8b798767a569f79a85a))
+
 ## [0.9.6](https://github.com/nzdjb/static-site-generator/compare/v0.9.5...v0.9.6) (2025-01-13)
 
 
