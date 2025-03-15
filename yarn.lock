@@ -263,7 +263,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:*, @eslint/js@npm:9.22.0, @eslint/js@npm:^9.4.0":
+"@eslint/js@npm:9.22.0, @eslint/js@npm:^9.4.0":
   version: 9.22.0
   resolution: "@eslint/js@npm:9.22.0"
   checksum: 3eb6ed01c31f185b1822b78a872af5b87daa4aaf2ed753ce81c0c7227c852a09e1c7356103259f35f09e77d9e116c796cec6958702044d057f0c179b53b783ec
@@ -379,7 +379,6 @@ __metadata:
   dependencies:
     "@eslint/js": ^9.4.0
     "@iarna/toml": ^2.2.5
-    "@types/eslint__js": ^9.14.0
     "@types/glob": ^8.1.0
     "@types/marked": ^6.0.0
     "@types/node": ^22.5.0
@@ -417,15 +416,6 @@ __metadata:
   version: 0.1.1
   resolution: "@pkgr/core@npm:0.1.1"
   checksum: 6f25fd2e3008f259c77207ac9915b02f1628420403b2630c92a07ff963129238c9262afc9e84344c7a23b5cc1f3965e2cd17e3798219f5fd78a63d144d3cceba
-  languageName: node
-  linkType: hard
-
-"@types/eslint__js@npm:^9.14.0":
-  version: 9.14.0
-  resolution: "@types/eslint__js@npm:9.14.0"
-  dependencies:
-    "@eslint/js": "*"
-  checksum: 2bffe2e3d9401b6a530ba7fe8961ea786a6cf520abe11ef59435934df593fdd927c3cb3ac7afcd1c77961f0fab9a99d0d86b678f1124a96402105fd43309d38c
   languageName: node
   linkType: hard
 
