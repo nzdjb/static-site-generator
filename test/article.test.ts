@@ -1,4 +1,5 @@
 import { Article } from '../src/article.js';
+// eslint-disable-next-line n/no-unsupported-features/node-builtins
 import { describe, test } from 'node:test';
 import { ok, equal, deepEqual } from 'node:assert';
 
