@@ -1,5 +1,6 @@
 import { Article } from '../src/article.js';
 import { Config } from '../src/config.js';
+// eslint-disable-next-line n/no-unsupported-features/node-builtins
 import { describe, test } from 'node:test';
 import { deepEqual } from 'node:assert';
 

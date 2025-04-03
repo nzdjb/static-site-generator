@@ -1,5 +1,6 @@
 import { renderIndex } from '../src/index.js';
 import { Article } from '../src/article.js';
+// eslint-disable-next-line n/no-unsupported-features/node-builtins
 import { describe, test } from 'node:test';
 import { equal } from 'node:assert';
 
