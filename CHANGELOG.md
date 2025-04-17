@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.10](https://github.com/nzdjb/static-site-generator/compare/v0.9.9...v0.9.10) (2025-04-17)
+
+
+### Bug Fixes
+
+* bump sanitize-html from 2.15.0 to 2.16.0 ([#749](https://github.com/nzdjb/static-site-generator/issues/749)) ([d30acb0](https://github.com/nzdjb/static-site-generator/commit/d30acb07bc68b2e9d539f91cf22ad106ba14194d))
+
 ## [0.9.9](https://github.com/nzdjb/static-site-generator/compare/v0.9.8...v0.9.9) (2025-04-08)
 
 
