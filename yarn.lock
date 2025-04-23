@@ -281,13 +281,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:^9.4.0":
-  version: 9.25.1
-  resolution: "@eslint/js@npm:9.25.1"
-  checksum: f5b9c9c40694fbb858fc84ac0f9468ca3f09d8b4935da21dcab3f65c094e8e266a4926ec7bb1e18441440c5ddd722a5f62dabd58096aefbe6b517ed809d8fa8b
-  languageName: node
-  linkType: hard
-
 "@eslint/object-schema@npm:^2.1.6":
   version: 2.1.6
   resolution: "@eslint/object-schema@npm:2.1.6"
@@ -395,7 +388,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzdjb/static-site-generator@workspace:."
   dependencies:
-    "@eslint/js": ^9.4.0
     "@iarna/toml": ^2.2.5
     "@types/glob": ^8.1.0
     "@types/marked": ^6.0.0
