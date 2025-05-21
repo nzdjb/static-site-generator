@@ -1707,11 +1707,11 @@ __metadata:
   linkType: hard
 
 "marked@npm:*, marked@npm:^15.0.2":
-  version: 15.0.11
-  resolution: "marked@npm:15.0.11"
+  version: 15.0.12
+  resolution: "marked@npm:15.0.12"
   bin:
     marked: bin/marked.js
-  checksum: b0e73291803cabc62008ab21d5148fca98a82f92810b3c6b42d9c8c35a6d1993a6b2dfd779f12306a841649812f0b1494e00c7e8b673c96737eb29cb72ba8de3
+  checksum: 2ac72fc0bc7ecb47de246e396c7054d311f55379957e4e01796c12d196cb84480e8d53e54948f957a078f9166692fea8b0309fc597f26f855573e7ba5c1ec7eb
   languageName: node
   linkType: hard
 
