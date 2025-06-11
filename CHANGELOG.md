@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.16](https://github.com/nzdjb/static-site-generator/compare/v0.9.15...v0.9.16) (2025-06-11)
+
+
+### Bug Fixes
+
+* bump brace-expansion from 1.1.11 to 1.1.12 ([#810](https://github.com/nzdjb/static-site-generator/issues/810)) ([05f1a1e](https://github.com/nzdjb/static-site-generator/commit/05f1a1e592b48c99f64de6ebc47e6d45440c5a57))
+
 ## [0.9.15](https://github.com/nzdjb/static-site-generator/compare/v0.9.14...v0.9.15) (2025-05-21)
 
 
