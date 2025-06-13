@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.17](https://github.com/nzdjb/static-site-generator/compare/v0.9.16...v0.9.17) (2025-06-13)
+
+
+### Bug Fixes
+
+* bump glob from 11.0.2 to 11.0.3 ([#813](https://github.com/nzdjb/static-site-generator/issues/813)) ([2f1513b](https://github.com/nzdjb/static-site-generator/commit/2f1513b49660da7416766541cbbbd2bb8dfc8d11))
+
 ## [0.9.16](https://github.com/nzdjb/static-site-generator/compare/v0.9.15...v0.9.16) (2025-06-11)
 
 
