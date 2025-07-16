@@ -16,7 +16,7 @@
     "lint": "eslint src test"
   },
   "devDependencies": {
-    "@types/glob": "^8.1.0",
+    "@types/glob": "^9.0.0",
     "@types/marked": "^6.0.0",
     "@types/node": "^22.5.0",
     "@types/sanitize-html": "^2.9.0",
