@@ -434,7 +434,7 @@ __metadata:
     "@iarna/toml": ^2.2.5
     "@types/glob": ^8.1.0
     "@types/marked": ^6.0.0
-    "@types/node": ^22.5.0
+    "@types/node": ^24.0.15
     "@types/sanitize-html": ^2.9.0
     "@typescript-eslint/eslint-plugin": ^8.2.0
     es-main: ^1.3.0
@@ -505,12 +505,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.5.0":
+"@types/node@npm:*":
   version: 22.15.30
   resolution: "@types/node@npm:22.15.30"
   dependencies:
     undici-types: ~6.21.0
   checksum: c380ad176575dc847a119e63afe457f3481c0095ef1720605d42b3133cac1c5980179643ce67c9a314c83b9a45f2b17bde5f15b29d8aa1d17e0a43318273829b
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^24.0.15":
+  version: 24.0.15
+  resolution: "@types/node@npm:24.0.15"
+  dependencies:
+    undici-types: ~7.8.0
+  checksum: 27f31e6976587efdfd13c0024703d7e11e6a27a6af48d488c6e5662733c9e8d47ac059e38cd9d491425f68f0c5e8e2bc060859b0b66afe79af0697acb0c25e4d
   languageName: node
   linkType: hard
 
@@ -2444,6 +2453,13 @@ __metadata:
   version: 6.21.0
   resolution: "undici-types@npm:6.21.0"
   checksum: 46331c7d6016bf85b3e8f20c159d62f5ae471aba1eb3dc52fff35a0259d58dcc7d592d4cc4f00c5f9243fa738a11cfa48bd20203040d4a9e6bc25e807fab7ab3
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~7.8.0":
+  version: 7.8.0
+  resolution: "undici-types@npm:7.8.0"
+  checksum: 59521a5b9b50e72cb838a29466b3557b4eacbc191a83f4df5a2f7b156bc8263072b145dc4bb8ec41da7d56a7e9b178892458da02af769243d57f801a50ac5751
   languageName: node
   linkType: hard
 
