@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.18](https://github.com/nzdjb/static-site-generator/compare/v0.9.17...v0.9.18) (2025-08-11)
+
+
+### Bug Fixes
+
+* bump es-main from 1.3.0 to 1.4.0 ([#866](https://github.com/nzdjb/static-site-generator/issues/866)) ([c8f894c](https://github.com/nzdjb/static-site-generator/commit/c8f894cdaef973e09a68d07d28a28e8cb00b323e))
+
 ## [0.9.17](https://github.com/nzdjb/static-site-generator/compare/v0.9.16...v0.9.17) (2025-06-13)
 
 
