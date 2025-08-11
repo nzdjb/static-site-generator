@@ -997,9 +997,9 @@ __metadata:
   linkType: hard
 
 "es-main@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "es-main@npm:1.3.0"
-  checksum: 7e9f21106caec29215f440ea6d1a872f40fd03a373aad1054688f5d9b162da9ff6af1e563f5a4eeab0a23a81a0e708296b069a0bbdbf641a8682259cffd0a4cf
+  version: 1.4.0
+  resolution: "es-main@npm:1.4.0"
+  checksum: 6ef8719db8e441bdaff9d0f471463a29a1b716cefd531115992e3bab4d2b5cd9cb9acf19cb64dd43626388346d5911fb7c9c2bc8b71a8ba1628bed0c051efcf9
   languageName: node
   linkType: hard
 
