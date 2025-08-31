@@ -29,8 +29,7 @@
     "eslint-plugin-promise": "^7.1.0",
     "prettier": "^3.0.0",
     "typescript": "^5.4.5",
-    "typescript-eslint": "^8.2.0",
-    "yarn": "^1.22.22"
+    "typescript-eslint": "^8.2.0"
   },
   "bin": "dist/src/index.js",
   "dependencies": {
