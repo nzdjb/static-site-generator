@@ -17,7 +17,6 @@
   },
   "devDependencies": {
     "@types/glob": "^9.0.0",
-    "@types/marked": "^6.0.0",
     "@types/node": "^24.3.0",
     "@types/sanitize-html": "^2.9.0",
     "@typescript-eslint/eslint-plugin": "^8.2.0",
@@ -29,8 +28,7 @@
     "eslint-plugin-promise": "^7.1.0",
     "prettier": "^3.0.0",
     "typescript": "^5.4.5",
-    "typescript-eslint": "^8.2.0",
-    "yarn": "^1.22.22"
+    "typescript-eslint": "^8.2.0"
   },
   "bin": "dist/src/index.js",
   "dependencies": {
@@ -48,5 +46,5 @@
   "files": [
     "dist/src/**/*"
   ],
-  "packageManager": "yarn@3.6.3"
+  "packageManager": "yarn@4.9.4"
 }
