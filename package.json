@@ -1,6 +1,6 @@
 {
   "name": "@nzdjb/static-site-generator",
-  "version": "0.9.19",
+  "version": "0.10.0",
   "description": "Static site generator.",
   "main": "dist/src/index.js",
   "repository": "https://github.com/nzdjb/static-site-generator",
@@ -37,7 +37,6 @@
     "glob": "^11.0.0",
     "handlebars": "^4.7.7",
     "marked": "^16.2.1",
-    "marked-footnote": "^1.4.0",
     "sanitize-html": "^2.10.0",
     "ts-command-line-args": "^2.4.2"
   },
