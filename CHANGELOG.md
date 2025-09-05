@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.0](https://github.com/nzdjb/static-site-generator/compare/v0.9.19...v0.10.0) (2025-09-05)
+
+
+### Features
+
+* Footnote support. ([#888](https://github.com/nzdjb/static-site-generator/issues/888)) ([e6c44df](https://github.com/nzdjb/static-site-generator/commit/e6c44dfa33d4e3502b4234b66d34b22fd8db8563))
+
 ## [0.9.19](https://github.com/nzdjb/static-site-generator/compare/v0.9.18...v0.9.19) (2025-08-31)
 
 
