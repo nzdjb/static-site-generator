@@ -437,6 +437,7 @@ __metadata:
     glob: "npm:^11.0.0"
     handlebars: "npm:^4.7.7"
     marked: "npm:^16.2.1"
+    marked-footnote: "npm:^1.4.0"
     prettier: "npm:^3.0.0"
     sanitize-html: "npm:^2.10.0"
     ts-command-line-args: "npm:^2.4.2"
@@ -1721,6 +1722,15 @@ __metadata:
   dependencies:
     yallist: "npm:^4.0.0"
   checksum: 10/fc1fe2ee205f7c8855fa0f34c1ab0bcf14b6229e35579ec1fd1079f31d6fc8ef8eb6fd17f2f4d99788d7e339f50e047555551ebd5e434dda503696e7c6591825
+  languageName: node
+  linkType: hard
+
+"marked-footnote@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "marked-footnote@npm:1.4.0"
+  peerDependencies:
+    marked: ">=7.0.0"
+  checksum: 10/f83def0a4a3856af60156e61f4ae5ec3e7b14cebdef8943ad73e213ca3573b162533b4b5a0ede67e2e247ac841555f92217f5fdd15b977f9ce7487f8aee01e15
   languageName: node
   linkType: hard
 

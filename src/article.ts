@@ -1,9 +1,14 @@
 import { marked } from 'marked';
+import markedFootnote from 'marked-footnote';
 import { readFileSync } from 'node:fs';
 import sanitizeHTML from 'sanitize-html';
 
 const sanitizerSettings: sanitizeHTML.IOptions = {
   allowedTags: sanitizeHTML.defaults.allowedTags.concat(['img', 'h1']),
+  allowedAttributes: {
+    ...sanitizeHTML.defaults.allowedAttributes,
+    '*': ['id', 'aria-label'],
+  },
   disallowedTagsMode: 'escape',
 };
 
@@ -35,14 +40,19 @@ export class Article {
   readonly author?: string;
   readonly date: string;
   readonly published: boolean;
+  readonly slug: string;
 
   constructor(input: ArticleConfig) {
     this.title = input.title;
     this.author = input.author;
     this.date = input.date.toISOString().split('T')[0];
+    this.slug = input.title.toLowerCase().replaceAll(/\s/g, '-');
     const content = "content" in input ? input.content : readFileSync(input.contentFile).toString();
     this.content = sanitizeHTML(
-      marked.parse(content, { async: false }) as string,
+      marked.use(markedFootnote({
+        description: '', // Unfortunately, this still leaves the h2 in.
+        prefixId: `footnote-${this.slug}-`,
+      })).parse(content, { async: false }) as string,
       sanitizerSettings
     );
     this.published = input.published ?? true;
