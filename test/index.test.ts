@@ -1,8 +1,8 @@
-import { renderIndex } from '../src/index.js';
+import { renderIndex, renderArticle, renderArticles, sluggify } from '../src/index.js';
 import { Article } from '../src/article.js';
 // eslint-disable-next-line n/no-unsupported-features/node-builtins
 import { describe, test } from 'node:test';
-import { equal } from 'node:assert';
+import { deepEqual, equal } from 'node:assert';
 
 await describe('render index', async () => {
   await test('simple', () => {
@@ -52,4 +52,66 @@ await describe('render index', async () => {
     const result = renderIndex(template, articles);
     equal(result, '<html><body>On Walruses<br /></body></html>');
   });
+});
+
+await describe('render article', async () => {
+  await test('simple', () => {
+    const article = new Article({
+      date: new Date('January 1, 2023, 12:12:12'),
+      title: 'On Turtles',
+      content: 'Sometimes turtles visit the beach.',
+    });
+    const template = '<html></html>';
+    const result = renderArticle(template, article);
+    equal(result, '<html></html>');
+  });
+});
+
+await describe('render articles', async () => {
+  await test('simple', () => {
+    const articles: Article[] = [];
+    const template = '<html></html>';
+    const result = renderArticles(template, articles);
+    deepEqual(result, {});
+  });
+
+  await test('multiple', async () => {
+    const template =
+      '<html><body>{{article.title}}</body></html>';
+    const articles = [
+      new Article({
+        date: new Date('January 1, 2023, 12:12:12'),
+        title: 'On Turtles',
+        content: 'Sometimes turtles visit the beach.',
+      }),
+      new Article({
+        date: new Date('January 2, 2023'),
+        title: 'On Walruses',
+        content: 'The walrus is not to be trifled with.',
+      }),
+    ];
+    const result = renderArticles(template, articles);
+    deepEqual(result, {
+      'on-turtles': '<html><body>On Turtles</body></html>',
+      'on-walruses': '<html><body>On Walruses</body></html>',
+    });
+  });
+});
+
+await describe('sluggify', async () => {
+  const tests = {
+    'a': 'a',
+    'A': 'a',
+    'A Turtle': 'a-turtle',
+    ' A Turtle ': 'a-turtle',
+    'Hello! Welcome to the Turtle-Show!': 'hello-welcome-to-the-turtle-show',
+    '!@#$%^&*()_+-=': '-'
+  };
+
+  await Promise.all(Object.entries(tests).map(async ([input, expected]) => {
+    await test(`input: ${input}`, async () => {
+      const result = sluggify(input);
+      equal(result, expected);
+    });
+  }));
 });
