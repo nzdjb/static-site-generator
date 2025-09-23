@@ -22,6 +22,7 @@ export function sluggify(input: string): string {
 }
 
 export function renderArticles(template: string, articles: Article[]): Record<string, string> {
+  articles = articles.filter((a) => a.published);
   return Object.fromEntries(articles.map((article) => [sluggify(article.title), renderArticle(template, article)]));
 }
 

@@ -96,6 +96,28 @@ await describe('render articles', async () => {
       'on-walruses': '<html><body>On Walruses</body></html>',
     });
   });
+
+  await test('skip unpublished', () => {
+    const template =
+      '<html><body>{{article.title}}</body></html>';
+    const articles = [
+      new Article({
+        date: new Date('January 1, 2023, 12:12:12'),
+        title: 'On Turtles',
+        content: 'Sometimes turtles visit the beach.',
+        published: false,
+      }),
+      new Article({
+        date: new Date('January 2, 2023'),
+        title: 'On Walruses',
+        content: 'The walrus is not to be trifled with.',
+      }),
+    ];
+    const result = renderArticles(template, articles);
+    deepEqual(result, {
+      'on-walruses': '<html><body>On Walruses</body></html>',
+    });
+  });
 });
 
 await describe('sluggify', async () => {
