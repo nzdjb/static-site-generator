@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.11.1](https://github.com/nzdjb/static-site-generator/compare/v0.11.0...v0.11.1) (2025-09-23)
+
+
+### Bug Fixes
+
+* Remove unpublished article pages. ([#910](https://github.com/nzdjb/static-site-generator/issues/910)) ([8d08739](https://github.com/nzdjb/static-site-generator/commit/8d08739e0198a3ef86d60b3fdc8e788cddf98af0))
+
 ## [0.11.0](https://github.com/nzdjb/static-site-generator/compare/v0.10.1...v0.11.0) (2025-09-23)
 
 
