@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.11.0](https://github.com/nzdjb/static-site-generator/compare/v0.10.1...v0.11.0) (2025-09-23)
+
+
+### Features
+
+* Add support for creating article pages. ([#908](https://github.com/nzdjb/static-site-generator/issues/908)) ([1c25df5](https://github.com/nzdjb/static-site-generator/commit/1c25df5e6a02e0afd18ca8cf6a174f3aad449c2b))
+
 ## [0.10.1](https://github.com/nzdjb/static-site-generator/compare/v0.10.0...v0.10.1) (2025-09-15)
 
 
