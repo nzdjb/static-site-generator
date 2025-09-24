@@ -1,4 +1,4 @@
-import { renderIndex, renderArticle, renderArticles, sluggify } from '../src/index.js';
+import { renderIndex, renderArticle, renderArticles } from '../src/index.js';
 import { Article } from '../src/article.js';
 // eslint-disable-next-line n/no-unsupported-features/node-builtins
 import { describe, test } from 'node:test';
@@ -118,22 +118,4 @@ await describe('render articles', async () => {
       'on-walruses': '<html><body>On Walruses</body></html>',
     });
   });
-});
-
-await describe('sluggify', async () => {
-  const tests = {
-    'a': 'a',
-    'A': 'a',
-    'A Turtle': 'a-turtle',
-    ' A Turtle ': 'a-turtle',
-    'Hello! Welcome to the Turtle-Show!': 'hello-welcome-to-the-turtle-show',
-    '!@#$%^&*()_+-=': '-'
-  };
-
-  await Promise.all(Object.entries(tests).map(async ([input, expected]) => {
-    await test(`input: ${input}`, async () => {
-      const result = sluggify(input);
-      equal(result, expected);
-    });
-  }));
 });

@@ -17,13 +17,9 @@ export function renderArticle(template: string, article: Article): string {
   return Handlebars.compile(template)({ article });
 }
 
-export function sluggify(input: string): string {
-  return input.trim().toLocaleLowerCase().replaceAll(/[^a-zA-Z0-9-\s]/g, '').replaceAll(/\s/g, '-');
-}
-
 export function renderArticles(template: string, articles: Article[]): Record<string, string> {
   articles = articles.filter((a) => a.published);
-  return Object.fromEntries(articles.map((article) => [sluggify(article.title), renderArticle(template, article)]));
+  return Object.fromEntries(articles.map((article) => [article.slug, renderArticle(template, article)]));
 }
 
 interface CLIArgs {
