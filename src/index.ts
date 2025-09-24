@@ -22,7 +22,7 @@ export function renderArticles(template: string, articles: Article[]): Record<st
   return Object.fromEntries(articles.map((article) => [article.slug, renderArticle(template, article)]));
 }
 
-interface CLIArgs {
+interface AppArgs {
   config?: string,
   indexTemplate?: string,
   articleTemplate?: string,
@@ -31,17 +31,7 @@ interface CLIArgs {
   help?: boolean,
 }
 
-if (esMain(import.meta)) {
-  const args = parse<CLIArgs>({
-    config: { type: String, optional: true, multiple: true, description: 'Path to config file or directory of config files. Default: articles' },
-    indexTemplate: { type: String, optional: true, description: 'Path to index template file. Default: templates/index.hb.html' },
-    articleTemplate: { type: String, optional: true, description: 'Path to article template file. Default: templates/article.hb.html' },
-    outFile: { type: String, optional: true, description: 'Path to file to write output. Default: STDOUT' },
-    outDir: { type: String, optional: true, description: 'Directory to write articles to. If not provided, no articles are written.' },
-    help: { type: Boolean, optional: true, alias: 'h', description: 'Prints this usage guide.' }
-  }, {
-    helpArg: 'help'
-  });
+function main(args: AppArgs): void {
   const config = new Config([args.config ?? 'articles'].flat());
   const indexTemplate = readFileSync(args.indexTemplate ?? 'templates/index.hb.html').toString();
   const articleTemplatePath = args.articleTemplate ?? 'templates/article.hb.html';
@@ -57,4 +47,18 @@ if (esMain(import.meta)) {
       writeFileSync(`${args.outDir}/${slug}.html`, article);
     });
   }
+}
+
+if (esMain(import.meta)) {
+  const args = parse<AppArgs>({
+    config: { type: String, optional: true, multiple: true, description: 'Path to config file or directory of config files. Default: articles' },
+    indexTemplate: { type: String, optional: true, description: 'Path to index template file. Default: templates/index.hb.html' },
+    articleTemplate: { type: String, optional: true, description: 'Path to article template file. Default: templates/article.hb.html' },
+    outFile: { type: String, optional: true, description: 'Path to file to write output. Default: STDOUT' },
+    outDir: { type: String, optional: true, description: 'Directory to write articles to. If not provided, no articles are written.' },
+    help: { type: Boolean, optional: true, alias: 'h', description: 'Prints this usage guide.' }
+  }, {
+    helpArg: 'help'
+  });
+  main(args);
 }
