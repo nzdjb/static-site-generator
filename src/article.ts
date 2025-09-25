@@ -46,7 +46,7 @@ export class Article {
     this.title = input.title;
     this.author = input.author;
     this.date = input.date.toISOString().split('T')[0];
-    this.slug = input.title.toLowerCase().replaceAll(/\s/g, '-');
+    this.slug = input.title.trim().toLocaleLowerCase().replaceAll(/[^a-zA-Z0-9-\s]/g, '').replaceAll(/\s/g, '-');
     const content = "content" in input ? input.content : readFileSync(input.contentFile).toString();
     this.content = sanitizeHTML(
       marked.use(markedFootnote({
