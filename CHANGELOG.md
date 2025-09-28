@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.0](https://github.com/nzdjb/static-site-generator/compare/v0.11.1...v0.12.0) (2025-09-28)
+
+
+### Features
+
+* Support for partials. ([#913](https://github.com/nzdjb/static-site-generator/issues/913)) ([8553cc6](https://github.com/nzdjb/static-site-generator/commit/8553cc64bb140fe564a3593b66792c6e6dcba1d6))
+
 ## [0.11.1](https://github.com/nzdjb/static-site-generator/compare/v0.11.0...v0.11.1) (2025-09-23)
 
 
