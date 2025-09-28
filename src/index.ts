@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import Handlebars from 'handlebars';
-import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync } from 'fs';
 import { parse } from 'ts-command-line-args';
 import { Config } from './config.js';
 import { type Article } from './article.js';
@@ -22,12 +22,21 @@ export function renderArticles(template: string, articles: Article[]): Record<st
   return Object.fromEntries(articles.map((article) => [article.slug, renderArticle(template, article)]));
 }
 
+export function loadPartials(partialsDir: string): void {
+  readdirSync(partialsDir, { withFileTypes: true }).forEach((partial) => {
+    if (partial.isFile() || partial.isSymbolicLink()) {
+      Handlebars.registerPartial(partial.name, readFileSync(`${partialsDir}/${partial.name}`).toString());
+    }
+  });
+}
+
 interface AppArgs {
   config?: string,
   indexTemplate?: string,
   articleTemplate?: string,
   outFile?: string,
   outDir?: string,
+  partialsDir?: string,
   help?: boolean,
 }
 
@@ -36,6 +45,8 @@ function main(args: AppArgs): void {
   const indexTemplate = readFileSync(args.indexTemplate ?? 'templates/index.hb.html').toString();
   const articleTemplatePath = args.articleTemplate ?? 'templates/article.hb.html';
   const articleTemplate = existsSync(articleTemplatePath) ? readFileSync(articleTemplatePath).toString() : undefined;
+  const partialsDir = args.partialsDir ?? 'partials';
+  if (existsSync(partialsDir)) loadPartials(partialsDir);
   const index = renderIndex(indexTemplate, config.articles);
   if (args.outFile !== undefined) {
     writeFileSync(args.outFile, index);
@@ -56,6 +67,7 @@ if (esMain(import.meta)) {
     articleTemplate: { type: String, optional: true, description: 'Path to article template file. Default: templates/article.hb.html' },
     outFile: { type: String, optional: true, description: 'Path to file to write output. Default: STDOUT' },
     outDir: { type: String, optional: true, description: 'Directory to write articles to. If not provided, no articles are written.' },
+    partialsDir: { type: String, optional: true, description: 'Directory to laod partials from. Default: partials' },
     help: { type: Boolean, optional: true, alias: 'h', description: 'Prints this usage guide.' }
   }, {
     helpArg: 'help'
