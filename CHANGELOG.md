@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.4](https://github.com/nzdjb/static-site-generator/compare/v0.12.3...v0.12.4) (2025-11-15)
+
+
+### Bug Fixes
+
+* bump js-yaml from 4.1.0 to 4.1.1 ([#949](https://github.com/nzdjb/static-site-generator/issues/949)) ([46433e3](https://github.com/nzdjb/static-site-generator/commit/46433e33d00a1eed4799dd36975edc3c09016554))
+
 ## [0.12.3](https://github.com/nzdjb/static-site-generator/compare/v0.12.2...v0.12.3) (2025-11-07)
 
 
