@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.6](https://github.com/nzdjb/static-site-generator/compare/v0.12.5...v0.12.6) (2025-11-20)
+
+
+### Bug Fixes
+
+* bump marked from 16.4.2 to 17.0.0 ([#946](https://github.com/nzdjb/static-site-generator/issues/946)) ([a80a51e](https://github.com/nzdjb/static-site-generator/commit/a80a51e962dd39a2332fe0371232393033289a99))
+
 ## [0.12.5](https://github.com/nzdjb/static-site-generator/compare/v0.12.4...v0.12.5) (2025-11-20)
 
 
