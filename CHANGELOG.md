@@ -1,5 +1,40 @@
 # Changelog
 
+## [0.12.5](https://github.com/nzdjb/static-site-generator/compare/v0.12.4...v0.12.5) (2025-11-20)
+
+
+### Bug Fixes
+
+* bump glob from 11.0.3 to 13.0.0 ([#953](https://github.com/nzdjb/static-site-generator/issues/953)) ([7e56f5a](https://github.com/nzdjb/static-site-generator/commit/7e56f5af84e0983805bec2a0439f23a954ce0c19))
+
+## [0.12.4](https://github.com/nzdjb/static-site-generator/compare/v0.12.3...v0.12.4) (2025-11-15)
+
+
+### Bug Fixes
+
+* bump js-yaml from 4.1.0 to 4.1.1 ([#949](https://github.com/nzdjb/static-site-generator/issues/949)) ([46433e3](https://github.com/nzdjb/static-site-generator/commit/46433e33d00a1eed4799dd36975edc3c09016554))
+
+## [0.12.3](https://github.com/nzdjb/static-site-generator/compare/v0.12.2...v0.12.3) (2025-11-07)
+
+
+### Bug Fixes
+
+* bump marked from 16.4.1 to 16.4.2 ([#943](https://github.com/nzdjb/static-site-generator/issues/943)) ([35f91f3](https://github.com/nzdjb/static-site-generator/commit/35f91f3494a84be599c357065683ed233c182e43))
+
+## [0.12.2](https://github.com/nzdjb/static-site-generator/compare/v0.12.1...v0.12.2) (2025-10-20)
+
+
+### Bug Fixes
+
+* bump marked from 16.4.0 to 16.4.1 ([#933](https://github.com/nzdjb/static-site-generator/issues/933)) ([69cf936](https://github.com/nzdjb/static-site-generator/commit/69cf93656dfa26ad084e4dc0efea27cefacb6d63))
+
+## [0.12.1](https://github.com/nzdjb/static-site-generator/compare/v0.12.0...v0.12.1) (2025-10-07)
+
+
+### Bug Fixes
+
+* bump marked from 16.3.0 to 16.4.0 ([#924](https://github.com/nzdjb/static-site-generator/issues/924)) ([e00a396](https://github.com/nzdjb/static-site-generator/commit/e00a39683bef2dcb9d5d9d12cbad47d60faf7e4f))
+
 ## [0.12.0](https://github.com/nzdjb/static-site-generator/compare/v0.11.1...v0.12.0) (2025-09-28)
 
 
