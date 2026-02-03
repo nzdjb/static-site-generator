@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.7](https://github.com/nzdjb/static-site-generator/compare/v0.12.6...v0.12.7) (2026-02-03)
+
+
+### Bug Fixes
+
+* bump @isaacs/brace-expansion from 5.0.0 to 5.0.1 ([#998](https://github.com/nzdjb/static-site-generator/issues/998)) ([2e92855](https://github.com/nzdjb/static-site-generator/commit/2e9285578ad5e97d9009f16a44a83c9dccba150b))
+
 ## [0.12.6](https://github.com/nzdjb/static-site-generator/compare/v0.12.5...v0.12.6) (2025-11-20)
 
 
