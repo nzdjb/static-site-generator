@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.0](https://github.com/nzdjb/static-site-generator/compare/v0.12.8...v0.13.0) (2026-02-07)
+
+
+### Features
+
+* Initial, not very good, implementation of sitemaps. ([#1004](https://github.com/nzdjb/static-site-generator/issues/1004)) ([404e5ff](https://github.com/nzdjb/static-site-generator/commit/404e5ff8137b6dbcc24b64efebe594ce32f69713))
+
 ## [0.12.8](https://github.com/nzdjb/static-site-generator/compare/v0.12.7...v0.12.8) (2026-02-04)
 
 
