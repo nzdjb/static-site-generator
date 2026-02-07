@@ -22,6 +22,19 @@ export function renderArticles(template: string, articles: Article[]): Record<st
   return Object.fromEntries(articles.map((article) => [article.slug, renderArticle(template, article)]));
 }
 
+const siteMapSchemaUrl = 'https://www.sitemaps.org/schemas/sitemap/0.9';
+export function renderSiteMap(baseUrl: string, articles: Article[]): string {
+  const urlTags = articles.map((article) => {
+    return `<url><loc>${baseUrl}article/${article.slug}</loc></url>`;
+  });
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="${siteMapSchemaUrl} ${siteMapSchemaUrl}/sitemap.xsd"
+  xmlns="${siteMapSchemaUrl}">
+  ${urlTags.join("\n")}
+</urlset>`
+}
+
 export function loadPartials(partialsDir: string): void {
   readdirSync(partialsDir, { withFileTypes: true }).forEach((partial) => {
     if (partial.isFile() || partial.isSymbolicLink()) {
@@ -37,6 +50,8 @@ interface AppArgs {
   outFile?: string,
   outDir?: string,
   partialsDir?: string,
+  createSiteMap?: boolean,
+  baseUrl?: string,
   help?: boolean,
 }
 
@@ -58,6 +73,12 @@ function main(args: AppArgs): void {
       writeFileSync(`${args.outDir}/${slug}.html`, article);
     });
   }
+  const baseUrl = (args.baseUrl ?? '/').replace(/\/?$/, '/');
+  const createSiteMap = args.createSiteMap ?? false;
+  if (createSiteMap && args.outDir !== undefined) {
+    const siteMap = renderSiteMap(baseUrl, config.articles);
+    writeFileSync(`${args.outDir}/sitemap.xml`, siteMap);
+  }
 }
 
 if (esMain(import.meta)) {
@@ -68,6 +89,8 @@ if (esMain(import.meta)) {
     outFile: { type: String, optional: true, description: 'Path to file to write output. Default: STDOUT' },
     outDir: { type: String, optional: true, description: 'Directory to write articles to. If not provided, no articles are written.' },
     partialsDir: { type: String, optional: true, description: 'Directory to laod partials from. Default: partials' },
+    createSiteMap: { type: Boolean, optional: true, alias: 's', description: 'Creates a sitemap. Default: false' },
+    baseUrl: { type: String, optional: true, alias: 'b', description: 'Base URL to use when using absolute links. Default: "/"' },
     help: { type: Boolean, optional: true, alias: 'h', description: 'Prints this usage guide.' }
   }, {
     helpArg: 'help'
