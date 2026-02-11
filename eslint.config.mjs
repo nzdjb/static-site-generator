@@ -1,4 +1,4 @@
-import { defineConfig } from "eslint/config";
+import { defineConfig } from 'eslint/config';
 import eslint from '@eslint/js';
 import prettierConfig from 'eslint-config-prettier';
 import tseslint from 'typescript-eslint';
