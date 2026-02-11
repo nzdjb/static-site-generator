@@ -1,5 +1,10 @@
 import Handlebars from 'handlebars';
-import { renderIndex, renderArticle, renderArticles, loadPartials } from '../src/index.js';
+import {
+  renderIndex,
+  renderArticle,
+  renderArticles,
+  loadPartials,
+} from '../src/index.js';
 import { Article } from '../src/article.js';
 // eslint-disable-next-line n/no-unsupported-features/node-builtins
 import { describe, test } from 'node:test';
@@ -29,7 +34,8 @@ await describe('render index', async () => {
       }),
     ];
     const result = renderIndex(template, articles);
-    equal(result,
+    equal(
+      result,
       '<html><body>On Walruses<br />On Turtles<br /></body></html>',
     );
   });
@@ -77,8 +83,7 @@ await describe('render articles', async () => {
   });
 
   await test('multiple', async () => {
-    const template =
-      '<html><body>{{article.title}}</body></html>';
+    const template = '<html><body>{{article.title}}</body></html>';
     const articles = [
       new Article({
         date: new Date('January 1, 2023, 12:12:12'),
@@ -99,8 +104,7 @@ await describe('render articles', async () => {
   });
 
   await test('skip unpublished', () => {
-    const template =
-      '<html><body>{{article.title}}</body></html>';
+    const template = '<html><body>{{article.title}}</body></html>';
     const articles = [
       new Article({
         date: new Date('January 1, 2023, 12:12:12'),
@@ -121,7 +125,7 @@ await describe('render articles', async () => {
   });
 });
 
-await describe("partial loader", async () => {
+await describe('partial loader', async () => {
   await test('loads partials', () => {
     loadPartials('test/partials');
     const partialsCount = Object.keys(Handlebars.partials).length;
@@ -134,4 +138,4 @@ await describe("partial loader", async () => {
     equal(partialsCount, 2);
     equal(Handlebars.partials['link-partial.hb.html'], 'aaaaaaa\n');
   });
-})
+});
