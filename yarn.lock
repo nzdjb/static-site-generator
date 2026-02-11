@@ -194,7 +194,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint-community/eslint-utils@npm:^4.1.2, @eslint-community/eslint-utils@npm:^4.4.0":
+"@eslint-community/eslint-utils@npm:^4.1.2":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
   dependencies:
@@ -387,7 +387,6 @@ __metadata:
     eslint-config-prettier: "npm:^10.0.1"
     eslint-plugin-n: "npm:^17.0.0"
     eslint-plugin-prettier: "npm:^5.0.0"
-    eslint-plugin-promise: "npm:^7.1.0"
     glob: "npm:^13.0.0"
     handlebars: "npm:^4.7.7"
     marked: "npm:^17.0.1"
@@ -1046,17 +1045,6 @@ __metadata:
     eslint-config-prettier:
       optional: true
   checksum: 10/36c22c2fa2fd7c61ed292af1280e1d8f94dfe1671eacc5a503a249ca4b27fd226dbf6a1820457d611915926946f42729488d2dc7a5c320601e6cf1fad0d28f66
-  languageName: node
-  linkType: hard
-
-"eslint-plugin-promise@npm:^7.1.0":
-  version: 7.2.1
-  resolution: "eslint-plugin-promise@npm:7.2.1"
-  dependencies:
-    "@eslint-community/eslint-utils": "npm:^4.4.0"
-  peerDependencies:
-    eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
-  checksum: 10/e7447159d52dbc0fdaacfad18571906bb783f9f41f497e73f9b0351e9cc79497f9a9053fbef8141d0c027c16c768a1ef7f8cd4709a4a5cbb14636e862a1ccb34
   languageName: node
   linkType: hard
 
