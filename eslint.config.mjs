@@ -4,10 +4,10 @@ import prettierConfig from 'eslint-config-prettier';
 import tseslint from 'typescript-eslint';
 import eslintPluginN from 'eslint-plugin-n';
 
-export default defineConfig(
+export default defineConfig([
   eslintPluginN.configs['flat/recommended'],
   eslint.configs.recommended,
-  ...tseslint.configs.recommended,
+  tseslint.configs.recommended,
   prettierConfig,
   {
     rules: {
@@ -27,4 +27,4 @@ export default defineConfig(
     },
     files: ['**/*.ts'],
   },
-);
+]);
