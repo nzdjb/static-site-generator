@@ -22,7 +22,7 @@ export default defineConfig([
       parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
-        project: ['./tsconfig.json'],
+        projectService: true,
       },
     },
     files: ['**/*.ts'],
