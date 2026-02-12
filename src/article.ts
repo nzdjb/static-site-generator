@@ -46,14 +46,25 @@ export class Article {
     this.title = input.title;
     this.author = input.author;
     this.date = input.date.toISOString().split('T')[0];
-    this.slug = input.title.trim().toLocaleLowerCase().replaceAll(/[^a-zA-Z0-9-\s]/g, '').replaceAll(/\s/g, '-');
-    const content = "content" in input ? input.content : readFileSync(input.contentFile).toString();
+    this.slug = input.title
+      .trim()
+      .toLocaleLowerCase()
+      .replaceAll(/[^a-zA-Z0-9-\s]/g, '')
+      .replaceAll(/\s/g, '-');
+    const content =
+      'content' in input
+        ? input.content
+        : readFileSync(input.contentFile).toString();
     this.content = sanitizeHTML(
-      marked.use(markedFootnote({
-        description: '', // Unfortunately, this still leaves the h2 in.
-        prefixId: `footnote-${this.slug}-`,
-      })).parse(content, { async: false }) as string,
-      sanitizerSettings
+      marked
+        .use(
+          markedFootnote({
+            description: '', // Unfortunately, this still leaves the h2 in.
+            prefixId: `footnote-${this.slug}-`,
+          }),
+        )
+        .parse(content, { async: false }),
+      sanitizerSettings,
     );
     this.published = input.published ?? true;
   }

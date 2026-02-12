@@ -90,29 +90,33 @@ await describe('article', async () => {
     equal(d.compareDate(c), 1);
     deepEqual(
       [a, c, d].sort((a: Article, b: Article) => a.compareDate(b)),
-      [a, c, d]);
+      [a, c, d],
+    );
     deepEqual(
       [d, a, c].sort((a: Article, b: Article) => a.compareDate(b)),
-      [a, c, d]);
+      [a, c, d],
+    );
   });
 
   const slugTests = {
-    'a': 'a',
-    'A': 'a',
+    a: 'a',
+    A: 'a',
     'A Turtle': 'a-turtle',
     ' A Turtle ': 'a-turtle',
     'Hello! Welcome to the Turtle-Show!': 'hello-welcome-to-the-turtle-show',
-    '!@#$%^&*()_+-=': '-'
+    '!@#$%^&*()_+-=': '-',
   };
 
-  await Promise.all(Object.entries(slugTests).map(async ([title, expected]) => {
-    await test(`slug: ${title}`, async () => {
-      const article = new Article({
-        title,
-        content: '',
-        date: new Date('January 1, 2023 12:34:56'),
+  await Promise.all(
+    Object.entries(slugTests).map(async ([title, expected]) => {
+      await test(`slug: ${title}`, () => {
+        const article = new Article({
+          title,
+          content: '',
+          date: new Date('January 1, 2023 12:34:56'),
+        });
+        equal(article.slug, expected);
       });
-      equal(article.slug, expected);
-    });
-  }));
+    }),
+  );
 });

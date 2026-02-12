@@ -1,12 +1,13 @@
+import { defineConfig } from 'eslint/config';
 import eslint from '@eslint/js';
-import prettierConfig from 'eslint-config-prettier';
+import prettierConfig from 'eslint-plugin-prettier/recommended';
 import tseslint from 'typescript-eslint';
 import eslintPluginN from 'eslint-plugin-n';
 
-export default tseslint.config(
+export default defineConfig([
   eslintPluginN.configs['flat/recommended'],
   eslint.configs.recommended,
-  ...tseslint.configs.recommended,
+  tseslint.configs.recommendedTypeChecked,
   prettierConfig,
   {
     rules: {
@@ -17,13 +18,19 @@ export default tseslint.config(
         },
       ],
     },
+  },
+  {
     languageOptions: {
       parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
-        project: ['./tsconfig.json'],
+        projectService: {
+          allowDefaultProject: ['*.mjs'],
+        },
       },
     },
-    files: ['**/*.ts'],
   },
-);
+  {
+    ignores: ['dist/**', '.yarn/**', 'coverage/**'],
+  },
+]);
