@@ -29,6 +29,8 @@ export default defineConfig([
         },
       },
     },
-    files: ['**/*.ts'],
+  },
+  {
+    ignores: ['dist/**', '.yarn/**', 'coverage/**'],
   },
 ]);
