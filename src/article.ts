@@ -63,7 +63,7 @@ export class Article {
             prefixId: `footnote-${this.slug}-`,
           }),
         )
-        .parse(content, { async: false }) as string,
+        .parse(content, { async: false }),
       sanitizerSettings,
     );
     this.published = input.published ?? true;
