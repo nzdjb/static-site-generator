@@ -7,7 +7,7 @@ import eslintPluginN from 'eslint-plugin-n';
 export default defineConfig([
   eslintPluginN.configs['flat/recommended'],
   eslint.configs.recommended,
-  tseslint.configs.recommended,
+  tseslint.configs.recommendedTypeChecked,
   prettierConfig,
   {
     rules: {
@@ -18,11 +18,15 @@ export default defineConfig([
         },
       ],
     },
+  },
+  {
     languageOptions: {
       parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
-        projectService: true,
+        projectService: {
+          allowDefaultProject: ['*.mjs'],
+        },
       },
     },
     files: ['**/*.ts'],
