@@ -82,7 +82,7 @@ await describe('render articles', async () => {
     deepEqual(result, {});
   });
 
-  await test('multiple', async () => {
+  await test('multiple', () => {
     const template = '<html><body>{{article.title}}</body></html>';
     const articles = [
       new Article({

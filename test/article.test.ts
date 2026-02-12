@@ -109,7 +109,7 @@ await describe('article', async () => {
 
   await Promise.all(
     Object.entries(slugTests).map(async ([title, expected]) => {
-      await test(`slug: ${title}`, async () => {
+      await test(`slug: ${title}`, () => {
         const article = new Article({
           title,
           content: '',
