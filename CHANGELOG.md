@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.4](https://github.com/nzdjb/static-site-generator/compare/v0.13.3...v0.13.4) (2026-02-18)
+
+
+### Bug Fixes
+
+* bump glob from 13.0.3 to 13.0.5 ([#1021](https://github.com/nzdjb/static-site-generator/issues/1021)) ([ff0d203](https://github.com/nzdjb/static-site-generator/commit/ff0d2036c8c32032bdd120ee7d3ddc13c1fd7182))
+
 ## [0.13.3](https://github.com/nzdjb/static-site-generator/compare/v0.13.2...v0.13.3) (2026-02-13)
 
 
