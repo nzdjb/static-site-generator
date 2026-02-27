@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.7](https://github.com/nzdjb/static-site-generator/compare/v0.13.6...v0.13.7) (2026-02-27)
+
+
+### Bug Fixes
+
+* bump minimatch from 10.2.2 to 10.2.4 ([#1035](https://github.com/nzdjb/static-site-generator/issues/1035)) ([6190842](https://github.com/nzdjb/static-site-generator/commit/6190842c5afb9752ab3fbbb534684b6246b1d4d6))
+
 ## [0.13.6](https://github.com/nzdjb/static-site-generator/compare/v0.13.5...v0.13.6) (2026-02-20)
 
 
