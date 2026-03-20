@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.10](https://github.com/nzdjb/static-site-generator/compare/v0.13.9...v0.13.10) (2026-03-20)
+
+
+### Bug Fixes
+
+* bump flatted from 3.3.1 to 3.4.2 ([#1052](https://github.com/nzdjb/static-site-generator/issues/1052)) ([f82da7d](https://github.com/nzdjb/static-site-generator/commit/f82da7d34658149dc6acae9bf49a53ca25dc237e))
+
 ## [0.13.9](https://github.com/nzdjb/static-site-generator/compare/v0.13.8...v0.13.9) (2026-03-19)
 
 
