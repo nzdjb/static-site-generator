@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.12](https://github.com/nzdjb/static-site-generator/compare/v0.13.11...v0.13.12) (2026-03-25)
+
+
+### Bug Fixes
+
+* bump picomatch from 4.0.2 to 4.0.4 ([#1060](https://github.com/nzdjb/static-site-generator/issues/1060)) ([826f130](https://github.com/nzdjb/static-site-generator/commit/826f1306b14ef1378fa1e41a24772332fe8fe568))
+
 ## [0.13.11](https://github.com/nzdjb/static-site-generator/compare/v0.13.10...v0.13.11) (2026-03-23)
 
 
