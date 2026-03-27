@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.13](https://github.com/nzdjb/static-site-generator/compare/v0.13.12...v0.13.13) (2026-03-27)
+
+
+### Bug Fixes
+
+* bump handlebars from 4.7.8 to 4.7.9 ([#1062](https://github.com/nzdjb/static-site-generator/issues/1062)) ([16a7b4b](https://github.com/nzdjb/static-site-generator/commit/16a7b4b9deee3e3ec91594237901acf08f99dfb9))
+
 ## [0.13.12](https://github.com/nzdjb/static-site-generator/compare/v0.13.11...v0.13.12) (2026-03-25)
 
 
