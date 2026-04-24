@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.17](https://github.com/nzdjb/static-site-generator/compare/v0.13.16...v0.13.17) (2026-04-24)
+
+
+### Bug Fixes
+
+* bump postcss from 8.4.31 to 8.5.10 ([#1092](https://github.com/nzdjb/static-site-generator/issues/1092)) ([a85addb](https://github.com/nzdjb/static-site-generator/commit/a85addb02c22e9163c6dc6cd75715464fc597e82))
+
 ## [0.13.16](https://github.com/nzdjb/static-site-generator/compare/v0.13.15...v0.13.16) (2026-04-16)
 
 
