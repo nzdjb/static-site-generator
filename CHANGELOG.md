@@ -1,5 +1,33 @@
 # Changelog
 
+## [0.13.19](https://github.com/nzdjb/static-site-generator/compare/v0.13.18...v0.13.19) (2026-05-14)
+
+
+### Bug Fixes
+
+* bump marked from 17.0.6 to 18.0.3 ([#1097](https://github.com/nzdjb/static-site-generator/issues/1097)) ([499cd4c](https://github.com/nzdjb/static-site-generator/commit/499cd4c634c5fb35c615ff53ec3ef3a5acdb1f65))
+
+## [0.13.18](https://github.com/nzdjb/static-site-generator/compare/v0.13.17...v0.13.18) (2026-05-14)
+
+
+### Bug Fixes
+
+* bump sanitize-html from 2.17.3 to 2.17.4 ([#1105](https://github.com/nzdjb/static-site-generator/issues/1105)) ([46fc764](https://github.com/nzdjb/static-site-generator/commit/46fc7643a60617f835f90ee693f1fb27518f5dff))
+
+## [0.13.17](https://github.com/nzdjb/static-site-generator/compare/v0.13.16...v0.13.17) (2026-04-24)
+
+
+### Bug Fixes
+
+* bump postcss from 8.4.31 to 8.5.10 ([#1092](https://github.com/nzdjb/static-site-generator/issues/1092)) ([a85addb](https://github.com/nzdjb/static-site-generator/commit/a85addb02c22e9163c6dc6cd75715464fc597e82))
+
+## [0.13.16](https://github.com/nzdjb/static-site-generator/compare/v0.13.15...v0.13.16) (2026-04-16)
+
+
+### Bug Fixes
+
+* bump sanitize-html from 2.17.2 to 2.17.3 ([#1083](https://github.com/nzdjb/static-site-generator/issues/1083)) ([3a8a506](https://github.com/nzdjb/static-site-generator/commit/3a8a5060542dd643875e6b9752853b4674c2132a))
+
 ## [0.13.15](https://github.com/nzdjb/static-site-generator/compare/v0.13.14...v0.13.15) (2026-04-06)
 
 
