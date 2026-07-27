@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.13.28](https://github.com/nzdjb/static-site-generator/compare/v0.13.27...v0.13.28) (2026-07-27)
+
+
+### Bug Fixes
+
+* bump brace-expansion from 5.0.7 to 5.0.8 ([#1172](https://github.com/nzdjb/static-site-generator/issues/1172)) ([b43c7b1](https://github.com/nzdjb/static-site-generator/commit/b43c7b18554410514ab9fd50c015ea7d8722e4d5))
+* bump postcss from 8.5.10 to 8.5.23 ([#1171](https://github.com/nzdjb/static-site-generator/issues/1171)) ([2452904](https://github.com/nzdjb/static-site-generator/commit/2452904c4219d736c15fc211129b98c6f2fa7a77))
+
 ## [0.13.27](https://github.com/nzdjb/static-site-generator/compare/v0.13.26...v0.13.27) (2026-07-21)
 
 
