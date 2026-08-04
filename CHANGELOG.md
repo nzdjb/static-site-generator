@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.29](https://github.com/nzdjb/static-site-generator/compare/v0.13.28...v0.13.29) (2026-08-04)
+
+
+### Bug Fixes
+
+* bump brace-expansion from 5.0.8 to 5.0.9 ([#1175](https://github.com/nzdjb/static-site-generator/issues/1175)) ([0069e0f](https://github.com/nzdjb/static-site-generator/commit/0069e0fff1bf5a297be4dccec3d8fa512ec6b505))
+
 ## [0.13.28](https://github.com/nzdjb/static-site-generator/compare/v0.13.27...v0.13.28) (2026-07-27)
 
 
