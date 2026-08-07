@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.30](https://github.com/nzdjb/static-site-generator/compare/v0.13.29...v0.13.30) (2026-08-07)
+
+
+### Bug Fixes
+
+* bump marked from 18.0.7 to 18.0.8 ([#1178](https://github.com/nzdjb/static-site-generator/issues/1178)) ([6e996e2](https://github.com/nzdjb/static-site-generator/commit/6e996e2f15203f175e4c06d0fcc3bf9c17af9877))
+
 ## [0.13.29](https://github.com/nzdjb/static-site-generator/compare/v0.13.28...v0.13.29) (2026-08-04)
 
 
