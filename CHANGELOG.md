@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.31](https://github.com/nzdjb/static-site-generator/compare/v0.13.30...v0.13.31) (2026-08-11)
+
+
+### Bug Fixes
+
+* bump nanoid from 3.3.16 to 3.3.18 ([#1182](https://github.com/nzdjb/static-site-generator/issues/1182)) ([5be56d6](https://github.com/nzdjb/static-site-generator/commit/5be56d67ea03ff68883773935277621dcd0cf54d))
+
 ## [0.13.30](https://github.com/nzdjb/static-site-generator/compare/v0.13.29...v0.13.30) (2026-08-07)
 
 
