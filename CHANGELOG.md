@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.35](https://github.com/nzdjb/static-site-generator/compare/v0.13.34...v0.13.35) (2026-09-02)
+
+
+### Bug Fixes
+
+* bump @humanfs/node from 0.16.6 to 0.16.8 ([#1198](https://github.com/nzdjb/static-site-generator/issues/1198)) ([9a88dc9](https://github.com/nzdjb/static-site-generator/commit/9a88dc9adae107bb7609eba40a1e482cb4b8dafe))
+
 ## [0.13.34](https://github.com/nzdjb/static-site-generator/compare/v0.13.33...v0.13.34) (2026-08-28)
 
 
