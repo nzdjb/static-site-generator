@@ -807,6 +807,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"argparse@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "argparse@npm:2.0.1"
+  checksum: 10/18640244e641a417ec75a9bd38b0b2b6b95af5199aa241b131d4b2fb206f334d7ecc600bd194861610a5579084978bfcbb02baa399dbe442d56d0ae5e60dbaef
+  languageName: node
+  linkType: hard
+
 "array-back@npm:^3.0.1, array-back@npm:^3.1.0":
   version: 3.1.0
   resolution: "array-back@npm:3.1.0"
@@ -1245,8 +1252,8 @@ __metadata:
   linkType: hard
 
 "eslint-plugin-n@npm:^18.0.1":
-  version: 18.3.0
-  resolution: "eslint-plugin-n@npm:18.3.0"
+  version: 18.4.0
+  resolution: "eslint-plugin-n@npm:18.4.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.5.0"
     enhanced-resolve: "npm:^5.17.1"
@@ -1255,6 +1262,7 @@ __metadata:
     globals: "npm:^15.11.0"
     globrex: "npm:^0.1.2"
     ignore: "npm:^5.3.2"
+    js-yaml: "npm:^5.4.1"
     semver: "npm:^7.6.3"
   peerDependencies:
     eslint: ">=8.57.1"
@@ -1265,7 +1273,7 @@ __metadata:
       optional: true
     typescript:
       optional: true
-  checksum: 10/59b7b243d895528b75ec1daa9b833620a0584bc0a2f56efe49ad823d609bc86bb5962258cb5f2e001c1422001feb6dcffd3aa3e7d2fd4943994ae387cd395a07
+  checksum: 10/bf0f6d5519d232c0b853484e4884756386811327bd812e8c74c66c9d824eee4652993a44f44c9418a20edd848124a586d39e477c706521b3add3ee5d6374d2f4
   languageName: node
   linkType: hard
 
@@ -1689,6 +1697,17 @@ __metadata:
   dependencies:
     "@isaacs/cliui": "npm:^9.0.0"
   checksum: 10/b88e3fe5fa04d34f0f939a15b7cef4a8589999b7a366ef89a3e0f2c45d2a7666066b67cbf46d57c3a4796a76d27b9d869b23d96a803dd834200d222c2a70de7e
+  languageName: node
+  linkType: hard
+
+"js-yaml@npm:^5.4.1":
+  version: 5.4.2
+  resolution: "js-yaml@npm:5.4.2"
+  dependencies:
+    argparse: "npm:^2.0.1"
+  bin:
+    js-yaml: bin/js-yaml.mjs
+  checksum: 10/f2461abd1d6268fb226733f0a0e0aa48004bb824116e3dfa75f1a1279001936343b672066dfecdb852ac3ca883452706c383a760aa90430cb68ba395aa2cbc84
   languageName: node
   linkType: hard
 
