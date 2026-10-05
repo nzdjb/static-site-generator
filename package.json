@@ -1,6 +1,6 @@
 {
   "name": "@nzdjb/static-site-generator",
-  "version": "0.13.39",
+  "version": "0.13.40",
   "description": "Static site generator.",
   "main": "dist/src/index.js",
   "repository": "https://github.com/nzdjb/static-site-generator",
