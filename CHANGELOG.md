@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.41](https://github.com/nzdjb/static-site-generator/compare/v0.13.40...v0.13.41) (2026-10-06)
+
+
+### Bug Fixes
+
+* bump source-map-js from 1.2.1 to 1.2.2 ([#1228](https://github.com/nzdjb/static-site-generator/issues/1228)) ([261b6fc](https://github.com/nzdjb/static-site-generator/commit/261b6fcdde82b551115e1272e235aa6ad5aa9854))
+
 ## [0.13.40](https://github.com/nzdjb/static-site-generator/compare/v0.13.39...v0.13.40) (2026-10-05)
 
 
