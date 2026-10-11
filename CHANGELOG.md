@@ -1,5 +1,125 @@
 # Changelog
 
+## [0.13.42](https://github.com/nzdjb/static-site-generator/compare/v0.13.41...v0.13.42) (2026-10-09)
+
+
+### Bug Fixes
+
+* bump marked from 18.0.14 to 18.1.0 ([#1232](https://github.com/nzdjb/static-site-generator/issues/1232)) ([b02e2eb](https://github.com/nzdjb/static-site-generator/commit/b02e2eb5d472cbb93d6b0787730e0713a447aebc))
+
+## [0.13.41](https://github.com/nzdjb/static-site-generator/compare/v0.13.40...v0.13.41) (2026-10-06)
+
+
+### Bug Fixes
+
+* bump source-map-js from 1.2.1 to 1.2.2 ([#1228](https://github.com/nzdjb/static-site-generator/issues/1228)) ([261b6fc](https://github.com/nzdjb/static-site-generator/commit/261b6fcdde82b551115e1272e235aa6ad5aa9854))
+
+## [0.13.40](https://github.com/nzdjb/static-site-generator/compare/v0.13.39...v0.13.40) (2026-10-05)
+
+
+### Bug Fixes
+
+* bump sanitize-html from 2.17.7 to 2.18.0 ([#1224](https://github.com/nzdjb/static-site-generator/issues/1224)) ([ae1157a](https://github.com/nzdjb/static-site-generator/commit/ae1157a7ff388c44ac5b91ef3b0d2f5e06305d22))
+
+## [0.13.39](https://github.com/nzdjb/static-site-generator/compare/v0.13.38...v0.13.39) (2026-10-02)
+
+
+### Bug Fixes
+
+* bump brace-expansion from 5.0.9 to 5.0.12 ([#1220](https://github.com/nzdjb/static-site-generator/issues/1220)) ([faf2480](https://github.com/nzdjb/static-site-generator/commit/faf2480f3b14db871980c14239fd8ddfd93e8b0e))
+
+## [0.13.38](https://github.com/nzdjb/static-site-generator/compare/v0.13.37...v0.13.38) (2026-09-28)
+
+
+### Bug Fixes
+
+* bump marked from 18.0.13 to 18.0.14 ([#1215](https://github.com/nzdjb/static-site-generator/issues/1215)) ([d21c212](https://github.com/nzdjb/static-site-generator/commit/d21c212a4fcbc7e62108e951902ef2c67ef1942e))
+
+## [0.13.37](https://github.com/nzdjb/static-site-generator/compare/v0.13.36...v0.13.37) (2026-09-16)
+
+
+### Bug Fixes
+
+* bump marked from 18.0.12 to 18.0.13 ([#1208](https://github.com/nzdjb/static-site-generator/issues/1208)) ([826afb7](https://github.com/nzdjb/static-site-generator/commit/826afb7f9b3d632a792901cf9bec90ebba4b1db8))
+
+## [0.13.36](https://github.com/nzdjb/static-site-generator/compare/v0.13.35...v0.13.36) (2026-09-11)
+
+
+### Bug Fixes
+
+* bump marked from 18.0.11 to 18.0.12 ([#1205](https://github.com/nzdjb/static-site-generator/issues/1205)) ([3c5f3bf](https://github.com/nzdjb/static-site-generator/commit/3c5f3bfb8b8a9f00e467785e34372a3daa01aaa4))
+
+## [0.13.35](https://github.com/nzdjb/static-site-generator/compare/v0.13.34...v0.13.35) (2026-09-02)
+
+
+### Bug Fixes
+
+* bump @humanfs/node from 0.16.6 to 0.16.8 ([#1198](https://github.com/nzdjb/static-site-generator/issues/1198)) ([9a88dc9](https://github.com/nzdjb/static-site-generator/commit/9a88dc9adae107bb7609eba40a1e482cb4b8dafe))
+
+## [0.13.34](https://github.com/nzdjb/static-site-generator/compare/v0.13.33...v0.13.34) (2026-08-28)
+
+
+### Bug Fixes
+
+* bump marked from 18.0.10 to 18.0.11 ([#1195](https://github.com/nzdjb/static-site-generator/issues/1195)) ([8c2fac7](https://github.com/nzdjb/static-site-generator/commit/8c2fac7a23e0d1c68c6489f5a4bb7149efde2b40))
+
+## [0.13.33](https://github.com/nzdjb/static-site-generator/compare/v0.13.32...v0.13.33) (2026-08-21)
+
+
+### Bug Fixes
+
+* bump marked from 18.0.9 to 18.0.10 ([#1189](https://github.com/nzdjb/static-site-generator/issues/1189)) ([6f813cb](https://github.com/nzdjb/static-site-generator/commit/6f813cb9df56af3cf4f0786d05fbb45a6839d0cb))
+
+## [0.13.32](https://github.com/nzdjb/static-site-generator/compare/v0.13.31...v0.13.32) (2026-08-17)
+
+
+### Bug Fixes
+
+* bump sanitize-html from 2.17.6 to 2.17.7 ([#1187](https://github.com/nzdjb/static-site-generator/issues/1187)) ([aac8a96](https://github.com/nzdjb/static-site-generator/commit/aac8a96174e6e16c025ee6b2f004d9805e39da1b))
+
+## [0.13.31](https://github.com/nzdjb/static-site-generator/compare/v0.13.30...v0.13.31) (2026-08-11)
+
+
+### Bug Fixes
+
+* bump nanoid from 3.3.16 to 3.3.18 ([#1182](https://github.com/nzdjb/static-site-generator/issues/1182)) ([5be56d6](https://github.com/nzdjb/static-site-generator/commit/5be56d67ea03ff68883773935277621dcd0cf54d))
+
+## [0.13.30](https://github.com/nzdjb/static-site-generator/compare/v0.13.29...v0.13.30) (2026-08-07)
+
+
+### Bug Fixes
+
+* bump marked from 18.0.7 to 18.0.8 ([#1178](https://github.com/nzdjb/static-site-generator/issues/1178)) ([6e996e2](https://github.com/nzdjb/static-site-generator/commit/6e996e2f15203f175e4c06d0fcc3bf9c17af9877))
+
+## [0.13.29](https://github.com/nzdjb/static-site-generator/compare/v0.13.28...v0.13.29) (2026-08-04)
+
+
+### Bug Fixes
+
+* bump brace-expansion from 5.0.8 to 5.0.9 ([#1175](https://github.com/nzdjb/static-site-generator/issues/1175)) ([0069e0f](https://github.com/nzdjb/static-site-generator/commit/0069e0fff1bf5a297be4dccec3d8fa512ec6b505))
+
+## [0.13.28](https://github.com/nzdjb/static-site-generator/compare/v0.13.27...v0.13.28) (2026-07-27)
+
+
+### Bug Fixes
+
+* bump brace-expansion from 5.0.7 to 5.0.8 ([#1172](https://github.com/nzdjb/static-site-generator/issues/1172)) ([b43c7b1](https://github.com/nzdjb/static-site-generator/commit/b43c7b18554410514ab9fd50c015ea7d8722e4d5))
+* bump postcss from 8.5.10 to 8.5.23 ([#1171](https://github.com/nzdjb/static-site-generator/issues/1171)) ([2452904](https://github.com/nzdjb/static-site-generator/commit/2452904c4219d736c15fc211129b98c6f2fa7a77))
+
+## [0.13.27](https://github.com/nzdjb/static-site-generator/compare/v0.13.26...v0.13.27) (2026-07-21)
+
+
+### Bug Fixes
+
+* bump brace-expansion from 5.0.6 to 5.0.7 ([#1167](https://github.com/nzdjb/static-site-generator/issues/1167)) ([c6ab604](https://github.com/nzdjb/static-site-generator/commit/c6ab6041d36e53edff138593d951a0abf8511b5e))
+
+## [0.13.26](https://github.com/nzdjb/static-site-generator/compare/v0.13.25...v0.13.26) (2026-07-21)
+
+
+### Bug Fixes
+
+* bump marked from 18.0.6 to 18.0.7 ([#1163](https://github.com/nzdjb/static-site-generator/issues/1163)) ([8c62ea2](https://github.com/nzdjb/static-site-generator/commit/8c62ea28f1c551168ecfba59f99a997ac3b0016d))
+
 ## [0.13.25](https://github.com/nzdjb/static-site-generator/compare/v0.13.24...v0.13.25) (2026-07-13)
 
 
